@@ -1,0 +1,26 @@
+{
+  "name": "ebec",
+  "version": "1.0.0",
+  "description": "EBEC regional round ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasiletaranovici/ebec17.git"
+  },
+  "keywords": [
+    "EBEC",
+    "engineering",
+    "competition",
+    "Romania",
+    "Moldova"
+  ],
+  "author": "Vasile Taranovici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasiletaranovici/ebec17/issues"
+  },
+  "homepage": "https://github.com/vasiletaranovici/ebec17#readme"
+}
