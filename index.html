@@ -75,8 +75,8 @@
               <li><a href="#team">{{ page.nav.team }}</a></li>
               <li><a href="#partners">{{ page.nav.partners}}</a></li>
               <li><a href="#contact">{{ page.nav.contact }}</a></li>
-              <li><a v-on:click="changeToEn" class="waves-effect waves-light" ><img class="mob-switch" src="img/uk.png"></img></a></li>
-              <li><a v-on:click="changeToRo" class="waves-effect waves-light" ><img class="mob-switch " src="img/ro.png"></img></a></li>
+              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English - swipe left or right to close', 4500)"><img class="mob-switch" src="img/uk.png"></img></a></li>
+              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Romana - gliseaza dreapta sau stanga pentru a elimina notificarea', 4500)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
           </div>
