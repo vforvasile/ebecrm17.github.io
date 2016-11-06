@@ -12,6 +12,9 @@
   <!-- Icons -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/fonts/materialdesignicons-webfont.svg" type="text/css" rel="stylesheet" > -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tether.min.css"> -->
   <!-- CSS  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css" type="text/css" rel="stylesheet">
@@ -22,8 +25,7 @@
 
   <!-- custom css -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
-  <!-- Material GALLERY -->
-  <script defer src="js/material-photo-gallery.min.js"></script>
+  <link rel="stylesheet" href="css/mobi.css">
   <!-- GreenStock effects -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
@@ -83,20 +85,47 @@
     </div>
 
     <!--Hero Video BG-->
-    <div class="section no-pad-bot scrollspy" id="index-banner">
+    <!-- <div class="section no-pad-bot scrollspy" id="index-banner">
       <div class="container">
       <h1 class="text_h center header cd-headline letters type">
             <span>European Best Engineering Competition</span>
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">coming soon</b>
-                <!-- <b>designing</b>
-                <b>developing</b> -->
             </span>
         </h1>
-    </div>
+    </div> -->
+    <section class="engine"></section>
+    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=vlijNN4Gei8">
+
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+
+        <div class="mbr-table-cell">
+
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="mbr-section col-md-10 col-md-offset-2 text-xs-right">
+
+                        <h1 class="mbr-section-title display-1">European BEST Engineering Competition</h1>
+                        <p class="mbr-section-lead lead">Romania & Moldova 2017.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#intro"><i class="mbr-arrow-icon"></i></a></div>
+
+    </section>
+
+
+
+
+
+
+
 
     <!--Intro and service-->
-    <div id="intro" class="section scrollspy">
+  <div id="intro" class="section scrollspy">
+    <!-- <div id="intro"> -->
       <div class="container">
         <!-- <h2 class="header text_b">{{ page.intro.header }}</h2> -->
         <div class="at-section__title">{{ page.intro.header }}</div>
@@ -109,37 +138,93 @@
               <li class="tab col s3 tab-link"><a class="waves-effect" href="#test4">{{ page.intro.tab4 }}</a></li>
             </ul>
           </div>
-          <br>
-          <br>
-          <div id="test1" class="col s12">Test 1
-            <p>
-              European BEST Engineering Competition (EBEC) is a project conducted by Board of European Students of Technology (BEST), gathering best European students of engineering. With EBEC Project BEST tries to raise the social awareness of all the students in relation to present-day world problems and involve them into resolving those ones. Project brings together students, universities, companies and Non Governmental Organisations.
-            </p>
 
-            <p>
-              Project consists of 3 levels and organises a Local BEST Engineering Competition where teams of 4 students compete against each other. The winners of this local event compete against each other in National and Regional BEST Engineering Competitions.
+          <div id="test1" class="col s12">
+              <p class="center-align">{{ page.intro.text1ebec }}  </p>
+                <ul class="row center-align" id="">
+                  <li class="col s12 m6 l4" >
+                        <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
+                        <h5>{{ page.intro.h1ebec }} </h5>
+                        <p>{{ page.intro.p1ebec }}</p>
+                  </li>
+                  <li class="col s12 m6 l4" >
+                        <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                        <h5>{{ page.intro.h2ebec }}</h5>
+                        <p>{{ page.intro.p2ebec }}</p>
+                  </li>
+                  <li class="col s12 m6 l4" >
+                        <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
+                        <h5>{{ page.intro.h3ebec }}</h5>
+                        <p>{{ page.intro.p3ebec }}</p>
+                  </li>
+                </ul>
+                <p class="center-align">{{ page.intro.text2ebec }}</p>
+                <p class="center-align">{{ page.intro.text3ebec }}  </p>
+        </div>
+
+          <div id="test2" class="col s12">
+            <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+            Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
             </p>
+              <ul class="row center-align" id="">
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Teamwork </h5>
+                      <p>Gather your people and choose one competition.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Team Design </h5>
+                      <p>Create something extraordinary from random materials.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Case Study </h5>
+                      <p>Encounter and solve problems in an ingenious way.</p>
+                </li>
+              </ul>
+              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
+              </p>
+              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
+              </p>
           </div>
 
-          <div id="test2" class="col s12">Test 2
-            <p>
-              EBEC Turkey, which is one of the national rounds of European BEST Enginering Competition, will be hosted by METU on 21-22 May 2016. Winners of local rounds will compete each other in hopes of going to final in Belgrad.
+          <div id="test3" class="col s12">
+            <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+            Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
             </p>
-            <p>
-              Students and companies will also meet during our job fair on 14th April before the competition.
-            </p>
-            <p>
-              The organisation,Board of European Studen waves-lightts of Technology (BEST) currently has 5 members in Turkey. Theese are;
-            </p>
+              <ul class="row center-align" id="">
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Teamwork </h5>
+                      <p>Gather your people and choose one competition.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Team Design </h5>
+                      <p>Create something extraordinary from random materials.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>Case Study </h5>
+                      <p>Encounter and solve problems in an ingenious way.</p>
+                </li>
+              </ul>
+              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
+              </p>
+              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
+              </p>
 
           </div>
-
-          <div id="test3" class="col s12">Test 3</div>
 
           <div id="test4" class="col s12">
             <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/4.jpg" >
                           </div>
                           <div class="card-content">
@@ -154,7 +239,7 @@
                   </div>
                   <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/1.jpg">
                           </div>
                           <div class="card-content">
@@ -162,29 +247,29 @@
                               <p><a href="#">Project link</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                              <span class="card-title grey-text text-darken-4">Tehnica Moldova <i class="mdi-navigation-close right"></i></span>
                               <p>Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/2.jpg">
                           </div>
                           <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4" id="uni-title">Tehnica Iasi <i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Project link</a></p>
+                              <p><a href="#">Tehnica Iasi</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                              <span class="card-title grey-text text-darken-4">Tehnica Iasi <i class="mdi-navigation-close right"></i></span>
                               <p>Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/3.jpg">
                           </div>
                           <div class="card-content">
@@ -192,37 +277,37 @@
                               <p><a href="#">Project link</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                              <span class="card-title grey-text text-darken-4">Tehnica Cluj-Napoca <i class="mdi-navigation-close right"></i></span>
                               <p>Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="img/4.jpg">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                              <img class="activator" src="img/5.jpg">
                           </div>
                           <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Transilvania<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="#">Project link</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                              <span class="card-title grey-text text-darken-4">Universitatea Transilvania <i class="mdi-navigation-close right"></i></span>
                               <p>Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m4 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="img/2.jpg">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                              <img class="activator" src="img/6.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Transilvania<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Poli Timisoara<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="#">Project link</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                              <span class="card-title grey-text text-darken-4">Poli Timisoara <i class="mdi-navigation-close right"></i></span>
                               <p>Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
@@ -433,7 +518,7 @@
         <div data-column='3' class="at-grid">
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/lucian.jpg"/></div>
               <div class="at-user__name">Lucian Stan</div>
               <div class="at-user__title">Regional Coordinator</div>
               <ul class="at-social">
@@ -448,7 +533,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/amy.jpg"/></div>
               <div class="at-user__name">Ana-Maria Brinza</div>
               <div class="at-user__title">Local Coordinator</div>
               <ul class="at-social">
@@ -463,7 +548,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/boheme/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/pava.jpg"/></div>
               <div class="at-user__name">Bogdan Pavalasc</div>
               <div class="at-user__title">Secretary</div>
               <ul class="at-social">
@@ -478,7 +563,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/zara.jpg"/></div>
               <div class="at-user__name">Monica Zara</div>
               <div class="at-user__title">Fundraising</div>
               <ul class="at-social">
@@ -493,7 +578,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/ioana.jpg"/></div>
               <div class="at-user__name">Adelina David</div>
               <div class="at-user__title">Human Resources</div>
               <ul class="at-social">
@@ -508,7 +593,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/marcogomes/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/flori.jpg"/></div>
               <div class="at-user__name">Florentina Draghici</div>
               <div class="at-user__title">Topics</div>
               <ul class="at-social">
@@ -523,7 +608,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/grig.jpg"/></div>
               <div class="at-user__name">Stefan Andrei</div>
               <div class="at-user__title">Design</div>
               <ul class="at-social">
@@ -538,7 +623,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/teo.jpg"/></div>
               <div class="at-user__name">Teodora Farcas</div>
               <div class="at-user__title">Marketing</div>
               <ul class="at-social">
@@ -553,7 +638,7 @@
           </div>
           <div class="at-column">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/tonychester/128.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/vasile.jpg"/></div>
               <div class="at-user__name">Vasile Taranovici</div>
               <div class="at-user__title">IT</div>
               <ul class="at-social">
@@ -677,19 +762,19 @@
 
 
     <!--Footer-->
-    <footer id="contact" class="page-footer default_color scrollspy">
+    <!-- <footer id="contact" class="page-footer default_color scrollspy">
       <div class="container">
-        <div class="row">
+        <div class="row"> -->
 
-          <div class="col l6 s12">
+          <!-- <div class="col l6 s12">
             <div id="map_container">
               <div id="map"></div>
             </div>
-          </div>
+          </div> -->
 
 
 
-          <div class="col l3 s12">
+          <!-- <div class="col l3 s12">
             <h5 class="white-text">EBEC Romania & Moldova 2017</h5>
             <ul>
               <li><a class="white-text" href="#">Home</a></li>
@@ -729,9 +814,54 @@
           Copyright <a class="white-text" href="http://ebec.ro">EBEC Romania and Moldova</a>.
         </div>
       </div>
+    </footer> -->
+    <div id="contact" class=" scrollspy">
+    <section class="mbr-section mbr-section-md-padding mbr-footer footer2" id="index-contacts2-0" style="background-color: #69963F; padding-top: 90px; padding-bottom: 90px;">
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-footer-content col s12 m3">
+                    <p><strong>Address</strong><br>
+    Studentilor 11 Street<br>
+    Chisinau MD 99999<br><br><br>
+    <strong>Contacts</strong><br>
+    Email: team@ebecrm.com<br>
+    Phone: +1 (0) 000 0000 001<br>
+    Fax: +1 (0) 000 0000 002</p>
+                </div>
+                <div class=" col s12 m3"><strong>Links</strong>
+                    <ul>
+                      <li>
+                        <a class="white-text" href="#">
+                          <i class="small fa fa-twitter white-text"></i> Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a class="white-text" href="#">
+                          <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                      </li>
+                    <li>
+                      <a class="white-text" href="#">
+                        <i class="small fa fa-facebook-square white-text"></i> Facebook
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+                <div class="col m6 s12">
+                    <div class="mbr-map"><iframe class="z-depth-2" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJtcaxrqlZwokRfwmmibzPsTU" allowfullscreen=""></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color:#4A6629; padding-top: 1.75rem; padding-bottom: 1.75rem;">
+
+        <div class="container align-center">
+            <p class="align-center" style="color: #f5f5f5;">Copyright (c) 2017 EBEC R&M 2017.</p>
+        </div>
     </footer>
-
-
+</div>
 
 
 
@@ -747,7 +877,13 @@
 
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"> </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"> </script> -->
+
+    <!-- <script src="js/temp/tether.min.js"></script>
+    <script src="js/temp/bootstrap.min.js"></script> -->
+    <!-- <script src="js/temp/SmoothScroll.js"></script> -->
+    <script src="js/temp/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/temp/mobi.js"></script>
 
       <script src="js/gmaps.js"></script>
             <script src="js/owl.js"></script>
