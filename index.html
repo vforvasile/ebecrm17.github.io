@@ -70,12 +70,12 @@
               <img src="img/ebec.png">
             </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#intro" class="waves-effect">{{ page.nav.about }}</a></li>
-              <li><a href="#gallery" class="waves-effect">{{ page.nav.gallery }}</a></li>
-              <li><a href="#testimonials" class="waves-effect">{{ page.nav.testimonials}}</a></li>
-              <li><a href="#team" class="waves-effect">{{ page.nav.team }}</a></li>
-              <li><a href="#partners" class="waves-effect">{{ page.nav.partners}}</a></li>
-              <li><a href="#contact" class="waves-effect">{{ page.nav.contact }}</a></li>
+              <li><a href="#intro" class="waves-effect" v-bind:class="page.nav.about">{{ page.nav.about }}</a></li>
+              <li><a href="#gallery" class="waves-effect" v-bind:class="page.nav.gallery">{{ page.nav.gallery }}</a></li>
+              <li><a href="#testimonials" class="waves-effect" v-bind:class="page.nav.testimonials">{{ page.nav.testimonials}}</a></li>
+              <li><a href="#team" class="waves-effect" v-bind:class="page.nav.team">{{ page.nav.team }}</a></li>
+              <li><a href="#partners" class="waves-effect" v-bind:class="page.nav.partners">{{ page.nav.partners}}</a></li>
+              <li><a href="#contact" class="waves-effect" v-bind:class="page.nav.contact">{{ page.nav.contact }}</a></li>
               <a class="btn-floating waves-effect waves-light active" id="lang-button" v-on:click="changeToEn" onclick="Materialize.toast('Translated in English', 2000)">
                 <img class="lang-switch" src="img/uk.png"></img>
               </a>
@@ -111,8 +111,10 @@
         </h1>
     </div> -->
     <section class="engine"></section>
-    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=vlijNN4Gei8">
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+              <img class="responsive-img hide-on-med-and-up" src="img/test.jpg">
+        <!-- <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA"> -->
+    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA">>
+        <div class="mbr-overlay hide-on-small-only" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
 
         <div class="mbr-table-cell">
 
@@ -907,6 +909,7 @@
       <!-- VueJS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
       <!-- My JS -->
+      <script src="js/main.js"></script>
       <script src="js/script.js"></script>
       <!-- gallery initial -->
       <script>
@@ -917,7 +920,7 @@
       </script>
 
 
-    <script src="js/main.js"></script>
+
   </div>
 </body>
 
