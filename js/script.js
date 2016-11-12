@@ -54,11 +54,11 @@ const ro = {
 const app = new Vue({
   el: '#app',
   data: {
-    page: en
+    pg: en //page
   },
   methods: {
-    changeToEn () { this.page = en },
-    changeToRo () { this.page = ro }
+    changeToEn () { this.pg = en },
+    changeToRo () { this.pg = ro }
   }
 })
 
