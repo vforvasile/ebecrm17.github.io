@@ -4,12 +4,12 @@
 const en = {
   lang: 'en',
   nav: {
-    about: 'About',
-    gallery: 'Gallery',
-    testimonials: 'Testimonials',
-    team: 'Team',
-    partners: 'Partners',
-    contact: 'Contact'
+    abt: 'About',
+    gl: 'Gallery',
+    test: 'Testimonials',
+    tm: 'Team',
+    ptn: 'Partners',
+    ct: 'Contact'
   },
   intro: {
     header: 'About',
@@ -29,12 +29,12 @@ const en = {
 const ro = {
   lang: 'ro',
   nav: {
-    about: 'Despre',
-    gallery: 'Galerie',
-    testimonials: 'Testimoniale',
-    team: 'Echipa',
-    partners: 'Parteneri',
-    contact: 'Contacteaza-ne'
+    abt: 'Despre',
+    gl: 'Galerie',
+    test: 'Testimoniale',
+    tm: 'Echipa',
+    ptn: 'Parteneri',
+    ct: 'Contact'
   },
   intro: {
     header: 'Despre',
