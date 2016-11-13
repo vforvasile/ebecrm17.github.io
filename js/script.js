@@ -1,7 +1,7 @@
 /* globals Vue */
 'use strict'
 
-const en = {
+var en = {
   lang: 'en',
   nav: {
     abt: 'About',
@@ -26,7 +26,7 @@ const en = {
   }
 }
 
-const ro = {
+var ro = {
   lang: 'ro',
   nav: {
     abt: 'Despre',
@@ -51,15 +51,15 @@ const ro = {
   }
 }
 
-const app = new Vue({
+var app = new Vue({
   el: '#app',
   data: {
     pg: en
   },
   methods: {
     changeToEn () { this.pg = en },
-    changeToRo () { this.pg = ro }
+    changeToRo () { this.pg = ro },
   }
 })
 
-console.log(app)
+// console.log(app)
