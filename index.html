@@ -37,6 +37,7 @@
 
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tether.min.css"> -->
+  <script src="js/vue.js"></script>
   <!-- CSS  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css" type="text/css" rel="stylesheet">
@@ -51,8 +52,8 @@
 
 
 </head>
-
-<body id="top" class="scrollspy">
+<!-- <body id="top" class="scrollspy"> -->
+<body id="top">
   <div id="app">
     <!-- Pre Loader -->
     <!-- <div id="loader-wrapper">
@@ -69,7 +70,7 @@
             <a href="#index-header4-0" id="logo-container" class="brand-logo">
               <img src="img/ebec.png">
             </a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down ">
               <li><a href="#intro" class="waves-effect" v-bind:class="pg.nav.about">{{ pg.nav.abt }}</a></li>
               <li><a href="#gallery" class="waves-effect" v-bind:class="pg.nav.gallery">{{ pg.nav.gl }}</a></li>
               <li><a href="#testimonials" class="waves-effect" v-bind:class="pg.nav.testimonials">{{ pg.nav.test}}</a></li>
@@ -102,8 +103,8 @@
 
 
 
-        <!-- <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA"> -->
-    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA">>
+        <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="#">
+    <!-- <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar section scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA"> -->
               <img class="responsive-img hide-on-med-and-up" src="img/test.jpg">
         <div class="mbr-overlay hide-on-small-only" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
 
@@ -132,6 +133,7 @@
 
 
     <!--Intro and service-->
+
   <div id="intro" class="section scrollspy">
     <!-- <div id="intro"> -->
       <div class="container">
@@ -140,97 +142,15 @@
         <div class="row">
           <div class="col s12">
             <ul class="tabs" id="about-section">
-              <li class="tab col s3 tab-link"><a class="active waves-effect" href="#test1" >EBEC</a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test2" >Romania</a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test3">BEST</a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test4">{{ pg.intro.tab4 }}</a></li>
+              <li class="tab col s3 tab-link"><a class="active waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
+              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test3" >BEST</a></li>
+              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test1">EBEC</a></li>
+              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test2">EBEC Romania</a></li>
             </ul>
           </div>
 
-          <div id="test1" class="col s12">
-              <p class="center-align">{{ pg.intro.text1ebec }}  </p>
-                <ul class="row center-align" id="">
-                  <li class="col s12 m6 l4" >
-                        <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h1ebec }} </h5>
-                        <p>{{ pg.intro.p1ebec }}</p>
-                  </li>
-                  <li class="col s12 m6 l4" >
-                        <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h2ebec }}</h5>
-                        <p>{{ pg.intro.p2ebec }}</p>
-                  </li>
-                  <li class="col s12 m6 l4" >
-                        <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h3ebec }}</h5>
-                        <p>{{ pg.intro.p3ebec }}</p>
-                  </li>
-                </ul>
-                <p class="center-align">{{ pg.intro.text2ebec }}</p>
-                <p class="center-align">{{ pg.intro.text3ebec }}  </p>
-        </div>
-
-          <div id="test2" class="col s12">
-            <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-            Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-            </p>
-              <ul class="row center-align" id="">
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Teamwork </h5>
-                      <p>Gather your people and choose one competition.</p>
-                </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Team Design </h5>
-                      <p>Create something extraordinary from random materials.</p>
-                </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Case Study </h5>
-                      <p>Encounter and solve problems in an ingenious way.</p>
-                </li>
-              </ul>
-              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-              </p>
-              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-              </p>
-          </div>
-
-          <div id="test3" class="col s12">
-            <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-            Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-            </p>
-              <ul class="row center-align" id="">
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Teamwork </h5>
-                      <p>Gather your people and choose one competition.</p>
-                </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Team Design </h5>
-                      <p>Create something extraordinary from random materials.</p>
-                </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-bar-chart fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>Case Study </h5>
-                      <p>Encounter and solve problems in an ingenious way.</p>
-                </li>
-              </ul>
-              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-              </p>
-              <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-              Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-              </p>
-
-          </div>
-
           <div id="test4" class="col s12">
-            <div class="col s12 m4 l4 uni-col">
+            <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/4.jpg" >
@@ -245,7 +165,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col s12 m4 l4 uni-col">
+                  <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/1.jpg">
@@ -260,7 +180,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col s12 m4 l4 uni-col">
+                  <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/2.jpg">
@@ -275,7 +195,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col s12 m4 l4 uni-col">
+                  <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/3.jpg">
@@ -290,7 +210,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col s12 m4 l4 uni-col">
+                  <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/5.jpg">
@@ -305,23 +225,93 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col s12 m4 l4 uni-col">
-                      <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
-                              <img class="activator" src="img/6.jpg">
-                          </div>
-                          <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Poli Timisoara<i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Project link</a></p>
-                          </div>
-                          <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Poli Timisoara <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                          </div>
-                      </div>
-                  </div>
 
               </div>
+
+
+              <div id="test3" class="col s12">
+                <p class="center-align">BEST (Board of European Students of Technology) is a non-profit, non-political, non-representative students’ organisation with the aim of providing communication, cooperation and exchange possibilities for students of technology since 1989.</p>
+
+                  <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
+                  Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
+                  </p>
+                  <p class="center-align">
+                    <h6 class="center-align">
+                      Among 33 countries
+                      <br>
+                      Present at 96 universities
+                                            <br>
+                      More than 4200 active members
+                                            <br>
+                      Visible to more than 1.700.000 European technical students
+                    </h6>
+                      BEST (Board of European Students of Technology) is a non-profit and voluntary European student organisation. We strive to provide complementary education for future engineers by communication, cooperation and exchange of students at the most important technical universities and faculties.
+
+                      Complementary education
+                      Throughout the year we organise educational, skill developing and leisurencourses for European students. In these courses we give students opportunities to broaden their minds, learn foreign languages, visit diffrent countries and experience new cultures.
+
+                      Educational involvement
+                      BEST takes active part in European educational thematic networks, shaping the future of European Higher Education.
+                </p>
+
+              </div>
+
+          <div id="test1" class="col s12">
+              <p class="center-align">{{ pg.intro.text1ebec }}  </p>
+                <ul class="row center-align" id="">
+                  <!-- <li class="col s12 m6 l4" >
+                        <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
+                        <h5>{{ pg.intro.h1ebec }} </h5>
+                        <p>{{ pg.intro.p1ebec }}</p>
+                  </li> -->
+                  <li class="col s12 m6 l6" >
+                        <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
+                        <h5>{{ pg.intro.h2ebec }}</h5>
+                        <p>{{ pg.intro.p2ebec }}</p>
+                  </li>
+                  <li class="col s12 m6 l6" >
+                        <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+                        <h5>{{ pg.intro.h3ebec }}</h5>
+                        <p>{{ pg.intro.p3ebec }}</p>
+                  </li>
+                </ul>
+                <p class="center-align">{{ pg.intro.text2ebec }}</p>
+                <p class="center-align">{{ pg.intro.text3ebec }}  </p>
+        </div>
+
+          <div id="test2" class="col s12">
+              <ul class="row center-align" id="">
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>EBEC Brasov</h5>
+                      <p>Gather your people and choose one competition.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>EBEC Bucuresti</h5>
+                      <p>Create something extraordinary from random materials.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>EBEC Chisinau </h5>
+                      <p>Encounter and solve problems in an ingenious way.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>EBEC Cluj-Napoca</h5>
+                      <p>Gather your people and choose one competition.</p>
+                </li>
+                <li class="col s12 m6 l4" >
+                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
+                      <h5>EBEC Iasi </h5>
+                      <p>Create something extraordinary from random materials.</p>
+                </li>
+              </ul>
+          </div>
+
+
+
+
 
 
           </div>
@@ -428,10 +418,10 @@
 
 
     <!-- testimonials -->
-    <div class="section scrollspy" id="testimonials">
+    <div class="section scrollspy center-align" id="testimonials">
       <div class="at-section__title">Testimonials</div>
 
-      		<ul class="testimonial-list container owl-carousel owl-theme" data-responsive='{"0":{"items":"1"}, "481":{"items":"2"},  "1025":{"items":"3"}}'>
+      		<ul class="testimonial-list container owl-carousel owl-theme center-align" data-responsive='{"0":{"items":"1"}, "481":{"items":"2"},  "1025":{"items":"3"}}'>
 
             <li>
                 <figure class="snip1139">

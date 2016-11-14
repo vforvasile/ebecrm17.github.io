@@ -145,7 +145,7 @@ nav ul a {
   opacity: 1;
 }
 
-.right li a:active, .right li a:focus {
+/*.right li a:active, .right li a:focus {
   color: #444;
   font-weight: 420;
   opacity: 1;
@@ -153,13 +153,21 @@ nav ul a {
   transition: all .15s ease-in-out;
   transition-delay: 0.2s;
 
-}
+}*/
 .right li:hover, li:active, li:focus  {
     background-color: #f5f5f5;
     /*background-color: #fff;*/
     opacity: 1;
 }
-
+nav ul a.active {
+  /*background: rgba(0,0,0,0.2) !important;*/
+  color: #444;
+    font-weight: 420;
+    opacity: 1;
+    border-bottom: 4px solid #69963F;
+    transition: all .10s ease-in-out;
+    /*transition-delay: 0.1s*/
+}
 
 
 /*team section*/
@@ -528,6 +536,10 @@ footer.page-footer {
 .tab-link:active {
     background-color: transparent;
 }
+.tab-link:hover {
+    background-color: #dcdcdc;
+}
+
 
 #intro {
     display:block;
@@ -575,8 +587,10 @@ figure.snip1139 {
   color: #333;
   text-align: left;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+  /*border-radius: 8px;*/
 }
+
+
 figure.snip1139 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -855,6 +869,17 @@ nav a.button-collapse i {
 #intro {
   margin-top: -30px;
 }
+figure.snip1139 {
+  /*min-width: 220px;*/
+  max-width: 80%;
+  width: 100%;
+
+}
+
+
+
+
+
 
 }
 
@@ -904,11 +929,13 @@ nav a.button-collapse i {
 
 }
 .ebec-icons {
-  color: #69963F;
+  color: #EEA225;
 }
 .uni-picture {
   max-height: 78% !important;
 }
+
+
 
 /*
 =======================================================
