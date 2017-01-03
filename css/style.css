@@ -451,8 +451,20 @@ nav a.button-collapse {
 
 #uni-title {
     line-height: 20px;
-    font-size: 20px;
+    font-size: 16px;
+
 }
+.card-content p {
+    font-size: 14px;
+}
+.uni-span {
+  font-size: 16px !important;
+}
+.uni-info {
+  font-size: 12px;
+}
+
+
 
 
 .card .card-content p {
@@ -539,6 +551,8 @@ footer.page-footer {
 .tab-link:hover {
     background-color: #dcdcdc;
 }
+
+
 
 
 #intro {
@@ -875,7 +889,9 @@ figure.snip1139 {
   width: 100%;
 
 }
-
+.tab-link {
+  width: 40px;
+}
 
 
 
@@ -942,4 +958,20 @@ figure.snip1139 {
 Implement other stuff here
 
 ========================================================
+*/
+.testimonial-list {
+  max-width: 1145px;
+}
+
+#contest-modal {
+  height: auto !important;
+  width: 40%;
+  opacity: 0.5;
+  border: none;
+}
+
+
+/* ------------
+
+Footer
 */

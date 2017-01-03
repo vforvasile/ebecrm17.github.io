@@ -38,6 +38,7 @@
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tether.min.css"> -->
   <script src="js/vue.js"></script>
+
   <!-- CSS  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css" type="text/css" rel="stylesheet">
@@ -104,7 +105,7 @@
 
 
         <!-- <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="#"> -->
-    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar section scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=KToISg5tzcA">
+    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar section scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=kp3c-QbuB2k">
               <img class="responsive-img hide-on-med-and-up" src="img/test.jpg">
         <div class="mbr-overlay hide-on-small-only" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
 
@@ -112,11 +113,14 @@
 
             <div class="container">
                 <div class="row">
-                    <!-- <div class="mbr-section col-md-10 col-md-offset-2 text-xs-right">
+                    <div class="mbr-section col-md-10 col-md-offset-2 text-xs-right">
 
                         <h1 class="mbr-section-title display-1">European BEST Engineering Competition</h1>
                         <p class="mbr-section-lead lead">Romania & Moldova 2017.</p>
-                    </div> -->
+                        <a class="modal-trigger waves-effect waves-light btn hide-on-med-and-down" href="#contest-modal">Contest</a>
+                    </div>
+                    <!-- Modal Trigger -->
+
                 </div>
             </div>
         </div>
@@ -128,6 +132,31 @@
 
 
 
+    <!--Contest Modal-->
+    <div id="contest-modal" class="modal z-depth-0 hide-on-med-and-down" >
+      <div class="modal-content">
+    <a class="e-widget no-button" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+      </div> -->
+    </div>
+
+
+
+    <!-- <ul class="collapsible hide-on-large-only" data-collapsible="expandable">
+        <li>
+          <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Third</div>
+          <div class="collapsible-body">
+            <a class="e-widget no-button" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
+            <a class="rcptr" href="http://www.rafflecopter.com/rafl/display/4f5853b10/" rel="nofollow" data-raflid="4f5853b10" data-theme="classic" data-template="" id="rcwidget_z14t01dg">a Rafflecopter giveaway</a>
+
+          </div>
+        </li>
+    </ul> -->
+
+    <!-- <script src="https://widget-prime.rafflecopter.com/launch.js"></script> -->
 
 
 
@@ -141,87 +170,89 @@
         <div class="at-section__title">{{ pg.intro.header }}</div>
         <div class="row">
           <div class="col s12">
+
             <ul class="tabs" id="about-section">
-              <li class="tab col s3 tab-link"><a class="active waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test3" >BEST</a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test1">EBEC</a></li>
-              <li class="tab col s3 tab-link"><a class="waves-effect" href="#test2">EBEC Romania</a></li>
+              <li class="tab  tab-link"><a class="active waves-effect" href="#test1">EBEC</a></li>
+              <li class="tab  tab-link"><a class="waves-effect" href="#test2">Romania</a></li>
+              <li class="tab  tab-link"><a class="waves-effect" href="#test3" >BEST</a></li>
+              <li class="tab  tab-link"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
             </ul>
+
           </div>
 
-          <div id="test4" class="col s12">
+          <div id="test4">
             <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                      <div class="card medium " id="uni-card" >
+                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
                               <img class="activator" src="img/4.jpg" >
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Poli Bucuresti <i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Website</a></p>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Politehnica din București<i class="mdi-navigation-more-vert right"></i></span>
+                              <p><a href="http://www.upb.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Politehnica din București <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
                               <img class="activator" src="img/1.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Tehnica Moldova <i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Project link</a></p>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică a Moldovei<i class="mdi-navigation-more-vert right"></i></span>
+                              <p><a href="http://utm.md/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Tehnica Moldova <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică a Moldovei<i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="right" data-delay="50" data-tooltip="Read more">
                               <img class="activator" src="img/2.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Tehnica Iasi <i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Tehnica Iasi</a></p>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică din Iaşi<i class="mdi-navigation-more-vert right"></i></span>
+                              <p><a href="http://www.tuiasi.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Tehnica Iasi <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică din Iaşi <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
                               <img class="activator" src="img/3.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Tehnica Cluj-Napoca<i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Project link</a></p>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică Cluj-Napoca<i class="mdi-navigation-more-vert right"></i></span>
+                              <p><a href="http://www.utcluj.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Tehnica Cluj-Napoca <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică Cluj-Napoca <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="right" data-delay="50" data-tooltip="Read more">
                               <img class="activator" src="img/5.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Transilvania<i class="mdi-navigation-more-vert right"></i></span>
-                              <p><a href="#">Project link</a></p>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Transilvania din Brașov<i class="mdi-navigation-more-vert right"></i></span>
+                              <p><a href="http://www.unitbv.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">Universitatea Transilvania <i class="mdi-navigation-close right"></i></span>
-                              <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Transilvania din Brașov <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
                           </div>
                       </div>
                   </div>
@@ -792,16 +823,18 @@
                   </ul>
               </div>
                 <div class="col m6 s12">
-                    <div class="mbr-map"><iframe class="z-depth-2" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJtcaxrqlZwokRfwmmibzPsTU" allowfullscreen=""></iframe></div>
+                    <div class="mbr-map"><iframe class="z-depth-2" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJX1bOth99yUARs_L82EstlYA&key=AIzaSyAzm8X41UPO4wnlxY94q6AJPjVeeWeBd7k" allowfullscreen=""></iframe></div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color:#4A6629; padding-top: 1.75rem; padding-bottom: 1.75rem;">
 
         <div class="container align-center">
-            <p class="align-center" style="color: #f5f5f5;">Copyright (c) 2017 EBEC R&M 2017.</p>
+            <p class="align-center" style="color: #f5f5f5; text-align: center;">Copyright (c) 2017 EBEC R&M 2017.</p>
         </div>
     </footer>
 </div>
@@ -813,7 +846,6 @@
 
 
     <!--  Scripts-->
-    <script src="js/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
@@ -830,10 +862,26 @@
     <!-- GreenStock effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <!-- VueJS -->
+<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
 
-    <!-- My JS -->
+
+<script>
+function expandAll(){
+  $(".collapsible-header").addClass("active");
+  $(".collapsible").collapsible({accordion: false});
+}
+
+function collapseAll(){
+  $(".collapsible-header").removeClass(function(){
+    return "active";
+  });
+  $(".collapsible").collapsible({accordion: true});
+  $(".collapsible").collapsible({accordion: false});
+}
+</script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+
     <!-- gallery initial -->
 
 
