@@ -1,7 +1,4 @@
-/*!
- * Default theme v2 (https://mobirise.com/)
- * Copyright 2016 Mobirise
- */
+
 .container {
   position: relative; }
 
@@ -308,7 +305,7 @@
       clear: none !important;
       padding-bottom: 0 !important; } }
   .mbr-footer p a, .mbr-footer ul a {
-    color: #c0a375; }
+    color: #fff; }
     .mbr-footer p a:hover, .mbr-footer ul a:hover {
       text-decoration: none; }
   .mbr-footer .btn-black {
@@ -602,15 +599,7 @@
 .visible {
   visibility: visible; }
 
-/*-------
 
-   Iconfont
-
--------*/
-/* iconfont default styling */
-/* for buttons */
-
-/*# sourceMappingURL=style.css.map */
 .engine {
 	position: absolute;
 	text-indent: -2400px;

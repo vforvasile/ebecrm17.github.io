@@ -3,9 +3,9 @@
         $('.button-collapse').sideNav();
         // $('.scrollspy').scrollSpy({scrollOffset:0});
 
-        $('.modal-trigger').leanModal();
+        // $('.modal-trigger').leanModal();
 
-        $('#lightgallery').lightGallery();
+        // $('#lightgallery').lightGallery();
 
         $('.scrollspy').scrollSpy({scrollOffset: 50});
 
@@ -18,5 +18,16 @@
             edge: 'left',
             closeOnClick: true
         });
+
+        new WOW().init();
     });
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function(){
+	$('.preloader-background').delay(1700).fadeOut('slow');
+
+	$('.preloader-wrapper')
+		.delay(1700)
+		.fadeOut();
+});
