@@ -31,3 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		.delay(1700)
 		.fadeOut();
 });
+
+$(document).ready(function(){
+         $('ul.tabs').tabs();
+       });

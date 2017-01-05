@@ -577,16 +577,23 @@ footer.page-footer {
     color: #4A6629;
   }
 
+/*tabs */
 #about-section .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
     background-color: #4A6629;
+    /*background-color: transparent;*/
     will-change: left, right;
     /*width: 50%;*/
 }
-.tab-link:active {
-    background-color: transparent;
+/*.tab-link {
+  background-color: #959595;
+}*/
+
+.tab-link:active,
+.tab-link:focus {
+    background-color: #dcdcdc;
 }
 .tab-link:hover {
     background-color: #dcdcdc;
@@ -867,8 +874,15 @@ figure.snip1139 {
   width: 100%;
 
 }
+
+/* mobile tabs */
 .tab-link {
-  width: 40px;
+  width: 40px !important;
+  min-width: 76px !important;
+  text-transform: capitalize !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: .5px !important;
 }
 
 
@@ -989,4 +1003,23 @@ Footer
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+
+
+.contest-container {
+  width: 350px;
+  height: auto;
+}
+
+
+#contest-badge {
+min-width: 2.7rem;
+height: 23px;
+font-size: 0.8rem;
+line-height: 12px;
+position: absolute;
+right: 15px;
+-moz-box-sizing: border-box;
+top: 13px;
+padding-top: 8px;
 }
