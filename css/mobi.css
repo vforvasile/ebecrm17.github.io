@@ -455,7 +455,8 @@
   @media all and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
     .mbr-arrow {
       bottom: 31px; } }
-  .mbr-arrow a {
+
+  /*.mbr-arrow a {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     color: #fff;
@@ -465,7 +466,19 @@
     position: relative;
     text-decoration: none;
     transition: all .3s ease-in-out;
-    width: 46px; }
+    width: 46px; }*/
+  .mbr-arrow a {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    outline-style: none !important;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    width: 100px;
+  }
     .mbr-arrow a:hover {
       background: #2d2d2d; }
   .mbr-arrow-icon {
@@ -473,13 +486,13 @@
     .mbr-arrow-icon::before {
       content: "\203a";
       display: inline-block;
-      font-family: serif;
+      /*font-family: serif;*/
       font-size: 32px;
-      line-height: 1;
+      line-height: 0.5;
       font-style: normal;
       left: 4px;
       position: relative;
-      top: 6px;
+      top: 0;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
   .mbr-arrow-floating .mbr-arrow-icon {

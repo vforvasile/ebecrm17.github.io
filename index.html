@@ -34,51 +34,53 @@
   <!-- Icons -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/fonts/materialdesignicons-webfont.svg" type="text/css" rel="stylesheet" > -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tether.min.css"> -->
-  <script src="js/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
 
   <!-- CSS  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css" type="text/css" rel="stylesheet">
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.5/css/lightgallery.min.css" rel="stylesheet"> -->
 <!-- Gallery -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/css/blueimp-gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/css/blueimp-gallery.min.css" rel="stylesheet">
     <!-- Animatii-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <!-- carousel -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" type="text/css" rel="stylesheet">
 
-
   <!-- custom css -->
-
   <link rel="stylesheet" href="css/mobi.css">
   <link href="css/style.css" type="text/css" rel="stylesheet">
 
-  <div class="preloader-background">
-  	<div class="preloader-wrapper big active">
-  		<div class="spinner-layer spinner-green-only">
-  			<div class="circle-clipper left">
-  				<div class="circle"></div>
-  			</div>
-  			<div class="gap-patch">
-  				<div class="circle"></div>
-  			</div>
-  			<div class="circle-clipper right">
-  				<div class="circle"></div>
-  			</div>
-  		</div>
-  	</div>
-  </div>
 
 </head>
 
-
+<div class="preloader-background">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <body id="top">
-  <div id="app">
+  <video autoplay loop muted poster="img/White-Board.jpg" id="bgvid" class="hide-on-med-and-down">
+      <source src="media/demo.webm" type="video/webm">
+      <source src="media/demo.mp4" type="video/mp4">
+      <source src="media/demo.ogv" type="video/ogv">
+  </video>
+  <button class="btn-floating btn-large waves-effect waves-light hide-on-med-and-down wow bounceInRight" data-wow-delay="2000ms" data-wow-duration="2s" id="vidpause">II</button>
+<!-- video edn -->
 
+
+  <div id="app">
 
     <!--Navigation-->
     <div class="navbar-fixed navbar-user">
@@ -110,8 +112,8 @@
               <li><a href="#team" class="waves-effect">{{ pg.nav.tm }}</a></li>
               <li><a href="#testimonials" class="waves-effect">{{ pg.nav.test}}</a></li>
               <li><a href="#contact" class="waves-effect">{{ pg.nav.ct }}</a></li>
-              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English - swipe left or right to close', 4500)"><img class="mob-switch" src="img/uk.png"></img></a></li>
-              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Romana - gliseaza dreapta sau stanga pentru a elimina notificarea', 4500)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
+              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English - swipe left or right to close', 4000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
+              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Romana - gliseaza dreapta sau stanga', 4000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
           </div>
@@ -120,58 +122,83 @@
     </div>
 
 
+    <!-- <h1 class="mbr-section-title display-1 wow fadeIn" data-wow-delay="300ms">European BEST Engineering Competition</h1>
+    <p class="mbr-section-lead lead wow fadeIn" data-wow-delay="400ms">Romania & Republic of Moldova 2017.</p>
+    <a class="btn waves-effect waves-light"  href="#contest">Check our Contest!
+    <i class="material-icons right">announcement</i>
+</a> -->
 
-        <!-- <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar scrollspy" id="index-header4-0" data-bg-video="#"> -->
-    <section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-after-navbar section scrollspy hide-on-small-only" id="index-header4-0" data-bg-video="https://www.youtube.com/watch?v=kp3c-QbuB2k">
-              <img class="responsive-img hide-on-med-and-up" src="img/test.jpg">
-        <div class="mbr-overlay hide-on-small-only" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
-
-        <div class="mbr-table-cell">
-
-            <div class="container">
-                <div class="row">
-                    <div class="mbr-section col-md-10 col-md-offset-2 text-xs-right">
-
-                        <h1 class="mbr-section-title display-1 wow fadeIn" data-wow-delay="300ms">European BEST Engineering Competition</h1>
-                        <p class="mbr-section-lead lead wow fadeIn" data-wow-delay="400ms">Romania & Moldova 2017.</p>
-                        <!-- <a class="modal-trigger waves-effect waves-light btn hide-on-med-and-down" href="#contest-modal">Contest</a> -->
-                    </div>
-                    <!-- Modal Trigger -->
-
-                </div>
-            </div>
-        </div>
-
-        <div class="mbr-arrow mbr-arrow-floating wow fadeIn  "data-wow-delay="200ms" aria-hidden="true"><a href="#intro"><i class="mbr-arrow-icon"></i></a></div>
-
-    </section>
+  <!-- <div class="Playful type hide-on-med-and-down center-align"> -->
+<div class="wrapper-text hide-on-med-and-down center-align Playful type">
+ <h1 class="giga bree-serif regular double-header-line wow fadeIn" data-wow-delay="200ms">European BEST Engineering Competition</h1>
+  <p class="delta oswald regular uppercase ls-large wow fadeIn" data-wow-delay="300ms">Romania and Republic of Moldova 2017</p>
+ </div>
+<!-- </div> -->
 
 
+  <!-- <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down "data-wow-delay="200ms" aria-hidden="true"><a href="#"><i class="mbr-arrow-icon"></i></a></div> -->
+  <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down wow zoomInDown "data-wow-delay="2000ms" data-wow-duration="3s"  aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
 
 
-    <!--Contest Modal-->
-    <!-- <div id="contest-modal" class="modal z-depth-0 hide-on-med-and-down" >
-      <div class="modal-content">-->
+<div class="scrollspy hide-on-large-only" id="intro2">
 
-
-
-      <!-- </div>
-    </div>  -->
-
-
-    <!-- <ul class="collapsible hide-on-large-only" data-collapsible="expandable">
+    <div class="slider mob-slider">
+      <ul class="slides">
         <li>
-          <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Third</div>
-          <div class="collapsible-body">
-            <a class="e-widget no-button" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
-            <a class="rcptr" href="http://www.rafflecopter.com/rafl/display/4f5853b10/" rel="nofollow" data-raflid="4f5853b10" data-theme="classic" data-template="" id="rcwidget_z14t01dg">a Rafflecopter giveaway</a>
-
+          <img src="img/ebec/brasov_5.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>EBEC Brașov</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
-    </ul> -->
+        <li>
+          <img src="img/ebec/bucuresti_2.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>EBEC București</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/ebec/chisinau_3.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>EBEC Chisinau</h3>
+            <h5 class="light grey-text text-lighten-3">Challenge Your Limits!</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/ebec/cluj_1.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>EBEC Cluj-Napoca</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/ebec/iasi_1.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>EBEC Iași</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-    <!-- <script src="https://widget-prime.rafflecopter.com/launch.js"></script> -->
 
+</div>
+
+
+
+    <div class="section scrollspy center-align" id="contest">
+        <div class="at-section">
+          <div class="at-section__title wow fadeIn" data-wow-delay="100ms">Contest</div>
+        </div>
+          <div class="contest-container center-align wow fadeIn" data-wow-delay="250ms">
+
+          <a class="e-widget no-button center-align wow fadeIn" data-wow-delay="250ms" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
+
+        </div>
+
+
+</div>
 
 
 
@@ -186,37 +213,22 @@
           <div class="col s12">
 
             <ul class="tabs wow fadeIn" id="about-section" data-wow-delay="70ms">
-              <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="active waves-effect " href="#test1">EBEC</a></li>
-              <li class="tab  tab-link wow fadeIn" data-wow-delay="120ms"><a class="waves-effect" href="#test2">Romania</a></li>
-              <li class="tab  tab-link wow fadeIn" data-wow-delay="140ms"><a class="waves-effect" href="#test3" >BEST</a></li>
-              <li class="tab  tab-link wow fadeIn" data-wow-delay="160ms"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
-              <li class="tab  tab-link wow fadeIn" data-wow-delay="180ms"><span class="new badge red hide-on-med-and-down" id="contest-badge"></span><a class="waves-effect" href="#test5" > Contest </a></li>
-            </ul>
-            <!-- <ul class="tabs" id="about-section">
-              <li class="tab  tab-link"><a class="active waves-effect" href="#test1">EBEC</a></li>
-              <li class="tab  tab-link"><a class="waves-effect" href="#test2">Romania</a></li>
-              <li class="tab  tab-link"><a class="waves-effect" href="#test3" >BEST</a></li>
-              <li class="tab  tab-link"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
-              <li class="tab  tab-link"><a class="waves-effect" href="#test5" > Contest </a></li>
-            </ul> -->
+            <!-- Mod 1 -->
+            <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="active waves-effect " href="#test1">BEST & EBEC</a></li>
 
-            <!-- <ul class="tabs" id="about-section">
-      <li class="col s1 "></li>
-       <li class="tab col s2 active"><a href="#test1">EBEC</a></li>
-       <li class="tab col s2"><a href="#test2">Romania</a></li>
-       <li class="tab col s2"><a href="#test3">BEST</a></li>
-       <li class="tab col s2"><a href="#test4">Test 4</a></li>
-      <li class="tab col s2 "><a href="#test5">Contest</a></li>
-            <li class="col s1 "></li>
-     </ul> -->
+            <!-- Mod 2 -->
+              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="waves-effect " href="#test1">BEST & EBEC</a></li> -->
+              <li class="tab  tab-link wow fadeIn" data-wow-delay="130ms"><a class="waves-effect" href="#test2">Romania & Moldova</a></li>
+              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="140ms"><a class="waves-effect" href="#test3" >BEST</a></li> -->
+              <li class="tab  tab-link wow fadeIn" data-wow-delay="160ms"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
+  <!-- Active plus first 2 -->
+              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="190ms"><span class="new badge red hide-on-med-and-down" id="contest-badge"></span><a class="waves-effect active" href="#test5" > Contest </a></li> -->
+<!-- Disabled below Mod 1 -->
+              <!-- <li class="tab  tab-link wow fadeIn disabled"  style="opacity: 0.5" data-wow-delay="190ms"><span class="new badge red hide-on-med-and-down" id="contest-badge"></span><a class="waves-effect" href="#test5"> Contest </a></li> -->
+
+            </ul>
           </div>
 
-
-<div id="test5">
-    <div class="container contest-container">
-    <a class="e-widget no-button" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
-  </div>
-</div>
           <div id="test4">
             <div class="col s12 m6 l4 uni-col">
                       <div class="card medium " id="uni-card" >
@@ -296,34 +308,6 @@
 
               </div>
 
-
-              <div id="test3" class="col s12">
-                <p class="center-align">BEST (Board of European Students of Technology) is a non-profit, non-political, non-representative students’ organisation with the aim of providing communication, cooperation and exchange possibilities for students of technology since 1989.</p>
-
-                  <p class="center-align">European BEST Engineering Competition, pe scurt EBEC, este cea mai mare competiţie de inginerie din Europa, creată de studenţi pentru studenţi pentru a-i aduna cei mai buni studenţi europeni de la inginerie. Echipe formate din 4 studenţi de la profile tehnice, indiferent de anul universitar, sunt provocaţi să rezolve probleme oferite de BEST şi partenerii săi în 3 nivele diferite de competiţie.
-                  Echipa care se dovedeşte a fi cea mai eficientă, creativă şi de succes la sfârşitul finalei competiţiei va primi titlul „BEST Engineers of Europe”.
-                  </p>
-                  <p class="center-align">
-                    <h6 class="center-align">
-                      Among 33 countries
-                      <br>
-                      Present at 96 universities
-                                            <br>
-                      More than 4200 active members
-                                            <br>
-                      Visible to more than 1.700.000 European technical students
-                    </h6>
-                      BEST (Board of European Students of Technology) is a non-profit and voluntary European student organisation. We strive to provide complementary education for future engineers by communication, cooperation and exchange of students at the most important technical universities and faculties.
-
-                      Complementary education
-                      Throughout the year we organise educational, skill developing and leisurencourses for European students. In these courses we give students opportunities to broaden their minds, learn foreign languages, visit diffrent countries and experience new cultures.
-
-                      Educational involvement
-                      BEST takes active part in European educational thematic networks, shaping the future of European Higher Education.
-                </p>
-
-              </div>
-
           <div id="test1" class="col s12 wow fadeIn" data-wow-delay="200ms">
               <p class="center-align">{{ pg.intro.text1ebec }}  </p>
                 <ul class="row center-align" id="">
@@ -347,33 +331,39 @@
                 <p class="center-align">{{ pg.intro.text3ebec }}  </p>
         </div>
 
-          <div id="test2" class="col s12">
-              <ul class="row center-align" id="">
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>EBEC Brasov</h5>
-                      <p>Gather your people and choose one competition.</p>
+          <div id="test2" class="col s12 center-align">
+              <ul class=" " >
+
+                <li class="col s6 m6 l4" >
+                  <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
+                <img src="img/locals/brasov.png" class="ebec-icons img-responsive " >
+              </a>
                 </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>EBEC Bucuresti</h5>
-                      <p>Create something extraordinary from random materials.</p>
+
+                <li class="col s6 m6 l4" >
+                  <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
+                <img src="img/locals/bucuresti.png" class="ebec-icons img-responsive" >
+              </a>
                 </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>EBEC Chisinau </h5>
-                      <p>Encounter and solve problems in an ingenious way.</p>
+
+                <li class="col s6 m6 l4" >
+                  <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
+                <img src="img/locals/chisinau.png" class="ebec-icons img-responsive" >
+              </a>
                 </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>EBEC Cluj-Napoca</h5>
-                      <p>Gather your people and choose one competition.</p>
+
+                <li class="col s6 m6 l4" >
+                  <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
+                <img src="img/locals/cluj.png" class="ebec-icons " >
+              </a>
                 </li>
-                <li class="col s12 m6 l4" >
-                      <i class="fa fa-cogs fa-5x ebec-icons" aria-hidden="true"></i>
-                      <h5>EBEC Iasi </h5>
-                      <p>Create something extraordinary from random materials.</p>
+
+                <li class="col s6 m6 l4" >
+                  <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
+                <img src="img/locals/iasi.png" class="ebec-icons " >
+              </a>
                 </li>
+
               </ul>
           </div>
 
@@ -399,33 +389,33 @@
 
           <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Brașov </h6>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
-            <a href="img/ebec/ebec_2014_01.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_2014_01_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/brasov_1.jpg" data-gallery>
+              <img src="img/ebec/thumb/brasov_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
-            <a href="img/ebec/ebec_02.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_02_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/brasov_2.jpg" data-gallery>
+              <img src="img/ebec/thumb/brasov_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
-            <a href="img/ebec/ebec_05.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_05_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/brasov_3.jpg" data-gallery>
+              <img src="img/ebec/thumb/brasov_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
-            <a href="img/ebec/ebec_11.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_11_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/brasov_4.jpg" data-gallery>
+              <img src="img/ebec/thumb/brasov_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
-            <a href="img/ebec/ebec_07.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_07_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/brasov_5.jpg" data-gallery>
+              <img src="img/ebec/thumb/brasov_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
           <!-- end of first row / add button below -->
@@ -435,36 +425,37 @@
           </a>
           </div>
 
+<!-- Lateeeeeeeeeeeeeeeeer -->
 
           <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Bucharest </h6>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
-            <a href="img/ebec/ebec_2014_01.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_2014_01_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/bucuresti_1.jpg" data-gallery>
+              <img src="img/ebec/thumb/bucuresti_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
-            <a href="img/ebec/ebec_02.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_02_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/bucuresti_2.jpg" data-gallery>
+              <img src="img/ebec/thumb/bucuresti_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
-            <a href="img/ebec/ebec_05.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_05_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/bucuresti_3.jpg" data-gallery>
+              <img src="img/ebec/thumb/bucuresti_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
-            <a href="img/ebec/ebec_11.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_11_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/bucuresti_4.jpg" data-gallery>
+              <img src="img/ebec/thumb/bucuresti_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
-            <a href="img/ebec/ebec_07.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_07_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/bucuresti_5.jpg" data-gallery>
+              <img src="img/ebec/thumb/bucuresti_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
@@ -482,33 +473,33 @@
 
           <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Chișinău </h6>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
-            <a href="img/ebec/ebec_2014_01.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_2014_01_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/chisinau_1.jpg" data-gallery>
+              <img src="img/ebec/thumb/chisinau_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
-            <a href="img/ebec/ebec_02.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_02_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/chisinau_2.jpg" data-gallery>
+              <img src="img/ebec/thumb/chisinau_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
-            <a href="img/ebec/ebec_05.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_05_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/chisinau_3.jpg" data-gallery>
+              <img src="img/ebec/thumb/chisinau_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
-            <a href="img/ebec/ebec_11.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_11_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/chisinau_4.jpg" data-gallery>
+              <img src="img/ebec/thumb/chisinau_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
-            <a href="img/ebec/ebec_07.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_07_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/chisinau_5.jpg" data-gallery>
+              <img src="img/ebec/thumb/chisinau_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
@@ -524,33 +515,33 @@
 
           <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Cluj-Napoca </h6>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
-            <a href="img/ebec/ebec_2014_01.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_2014_01_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/cluj_1.jpg" data-gallery>
+              <img src="img/ebec/thumb/cluj_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
-            <a href="img/ebec/ebec_02.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_02_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/cluj_2.jpg" data-gallery>
+              <img src="img/ebec/thumb/cluj_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
-            <a href="img/ebec/ebec_05.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_05_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/cluj_3.jpg" data-gallery>
+              <img src="img/ebec/thumb/cluj_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
-            <a href="img/ebec/ebec_11.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_11_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/cluj_4.jpg" data-gallery>
+              <img src="img/ebec/thumb/cluj_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
-            <a href="img/ebec/ebec_07.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_07_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/cluj_5.jpg" data-gallery>
+              <img src="img/ebec/thumb/cluj_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
@@ -566,33 +557,33 @@
 
           <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Iași</h6>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
-            <a href="img/ebec/ebec_2014_01.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_2014_01_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/iasi_1.jpg" data-gallery>
+              <img src="img/ebec/thumb/iasi_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
-            <a href="img/ebec/ebec_02.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_02_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/iasi_2.jpg" data-gallery>
+              <img src="img/ebec/thumb/iasi_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
-            <a href="img/ebec/ebec_05.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_05_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/iasi_3.jpg" data-gallery>
+              <img src="img/ebec/thumb/iasi_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
-            <a href="img/ebec/ebec_11.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_11_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/iasi_4.jpg" data-gallery>
+              <img src="img/ebec/thumb/iasi_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
-            <a href="img/ebec/ebec_07.jpg" data-gallery>
-              <img src="img/ebec/thumb/ebec_07_thumb.jpg" class="img-responsive gallery-pics z-depth-1">
+            <a href="img/ebec/iasi_5.jpg" data-gallery>
+              <img src="img/ebec/thumb/iasi_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
             </a>
           </div>
 
@@ -758,12 +749,23 @@
               <div class="at-user__name">Lucian Stan</div>
               <div class="at-user__title">Regional Coordinator</div>
               <ul class="at-social">
+
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -775,11 +777,20 @@
               <div class="at-user__title">Local Coordinator</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -790,26 +801,44 @@
               <div class="at-user__title">Secretary</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="350ms">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="img/team/zara.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/zara2.jpg"/></div>
               <div class="at-user__name">Monica Zara</div>
               <div class="at-user__title">Fundraising</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -820,26 +849,44 @@
               <div class="at-user__title">Human Resources</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="450ms">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="img/team/flori.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/flori2.jpg"/></div>
               <div class="at-user__name">Florentina Draghici</div>
               <div class="at-user__title">Topics</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -850,11 +897,20 @@
               <div class="at-user__title">Design</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -865,26 +921,44 @@
               <div class="at-user__title">Marketing</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="600ms">
             <div class="at-user">
-              <div class="at-user__avatar"><img src="img/team/vasile.jpg"/></div>
+              <div class="at-user__avatar"><img src="img/team/vasile2.jpg"/></div>
               <div class="at-user__name">Vasile Taranovici</div>
               <div class="at-user__title">IT</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square "></i></a></li>
+                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square  team-linkedin"></i></a></li>
+                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
+                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                  </a>
+                </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o "></i></a></li>
+                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
+                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -1074,18 +1148,11 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
     </script>
     <!-- materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.5/js/lightgallery.min.js"></script> -->
 
-    <script src="js/temp/jquery.mb.YTPlayer.min.js"></script>
-    <script src="js/temp/mobi.js"></script>
-
-    <script src="js/owl.js"></script>
     <!-- GreenStock effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <!-- Contest -->
-    <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
 
     <!-- For Gallery EBEC15 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/blueimp-gallery.min.js"></script>
@@ -1094,6 +1161,12 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
     <!-- animatii -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+    <!-- Contest -->
+<script>
+
+
+</script>
+    <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 
