@@ -30,7 +30,7 @@
   <title>EBEC R&M 2017</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"> -->
   <!-- Icons -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/fonts/materialdesignicons-webfont.svg" type="text/css" rel="stylesheet" > -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -70,15 +70,15 @@
   </div>
 </div>
 
-<body id="top">
+<body id="top" class="scrollspy">
   <video autoplay loop muted poster="img/White-Board.jpg" id="bgvid" class="hide-on-med-and-down">
       <source src="media/demo.webm" type="video/webm">
       <source src="media/demo.mp4" type="video/mp4">
       <source src="media/demo.ogv" type="video/ogv">
   </video>
-  <button class="btn-floating btn-large waves-effect waves-light hide-on-med-and-down wow bounceInRight" data-wow-delay="2000ms" data-wow-duration="2s" id="vidpause">II</button>
+  <button class="btn-floating btn-large waves-effect waves-light hide-on-med-and-down wow " data-wow-delay="500ms"  id="vidpause">II</button>
 <!-- video edn -->
-
+<!-- data-wow-duration="1s" bounceInRight -->
 
   <div id="app">
 
@@ -87,7 +87,7 @@
       <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#index-header4-0" id="logo-container" class="brand-logo">
+            <a href="#top" id="logo-container" class="brand-logo">
               <img src="img/ebec.png">
             </a>
             <ul class="right hide-on-med-and-down navigation-ul ">
@@ -122,12 +122,6 @@
     </div>
 
 
-    <!-- <h1 class="mbr-section-title display-1 wow fadeIn" data-wow-delay="300ms">European BEST Engineering Competition</h1>
-    <p class="mbr-section-lead lead wow fadeIn" data-wow-delay="400ms">Romania & Republic of Moldova 2017.</p>
-    <a class="btn waves-effect waves-light"  href="#contest">Check our Contest!
-    <i class="material-icons right">announcement</i>
-</a> -->
-
   <!-- <div class="Playful type hide-on-med-and-down center-align"> -->
 <div class="wrapper-text hide-on-med-and-down center-align Playful type">
  <h1 class="giga bree-serif regular double-header-line wow fadeIn" data-wow-delay="200ms">European BEST Engineering Competition</h1>
@@ -137,8 +131,8 @@
 
 
   <!-- <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down "data-wow-delay="200ms" aria-hidden="true"><a href="#"><i class="mbr-arrow-icon"></i></a></div> -->
-  <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down wow zoomInDown "data-wow-delay="2000ms" data-wow-duration="3s"  aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
-
+  <div class="mbr-arrow mbr-arrow-floating wow fadeIn  wow zoomInDown hide-on-med-and-down" data-wow-delay="1200ms"   aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
+<!-- data-wow-delay="1500ms" data-wow-duration="3s" -->
 
 <div class="scrollspy hide-on-large-only" id="intro2">
 
@@ -187,17 +181,37 @@
 
 
 
-    <div class="section scrollspy center-align" id="contest">
+    <div class="section scrollspy center-align contest-section" id="contest">
         <div class="at-section">
-          <div class="at-section__title wow fadeIn" data-wow-delay="100ms">Contest</div>
+          <div class="at-section__title wow fadeIn" data-wow-delay="100ms"> {{ pg.ctest.title }} </div>
         </div>
           <div class="contest-container center-align wow fadeIn" data-wow-delay="250ms">
 
-          <a class="e-widget no-button center-align wow fadeIn" data-wow-delay="250ms" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
+          <a class="e-widget no-button center-align wow fadeIn contest-box" data-wow-delay="250ms" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
+
+
+        <div class="rules row">
+          <h5>{{ pg.ctest.rules }}</h5>
+          <ul class="left-align col l4 m8 s12 offset-l4">
+            <li>
+          		1) {{ pg.ctest.rule1 }}
+            </li>
+            <li>
+              2) {{ pg.ctest.rule2 }}
+            </li>
+            <li>
+              3) {{ pg.ctest.rule3 }}
+            </li>
+            <li>
+              4) {{ pg.ctest.rule4 }}
+            </li>
+            <p>
+            	{{ pg.ctest.msg}}
+            </p>
+          </ul>
 
         </div>
-
-
+        </div>
 </div>
 
 
@@ -236,12 +250,21 @@
                               <img class="activator" src="img/4.jpg" >
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Politehnica din București<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">{{ pg.uni.bucur1 }}<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="http://www.upb.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Politehnica din București <i class="mdi-navigation-close right"></i></span>
-                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">{{ pg.uni.bucur1 }} <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info"> {{ pg.uni.bucur2 }}
+                                <ul class="university-details">
+                                  <li><span>{{ pg.uni.chan }}:</span> Mihnea Costoiu</li>
+                                  <li><span> {{ pg.uni.fnd }}:</span>  1864</li>
+                                  <li><span>{{ pg.uni.nrSt }}:</span> 25.000+</li>
+                                  <li><span>{{ pg.uni.nrFc }}:</span> 15</li>
+                                  <li><span>{{ pg.uni.adds }}:</span> Splaiul Independenței 313, București 060042, România </li>
+                                  <li><span>{{ pg.uni.phn }}:</span> +40 214 029 100</li>
+                                </ul>
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -251,12 +274,21 @@
                               <img class="activator" src="img/1.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică a Moldovei<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">{{ pg.uni.chi1 }}<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="http://utm.md/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică a Moldovei<i class="mdi-navigation-close right"></i></span>
-                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">{{ pg.uni.chi1 }}<i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">{{ pg.uni.chi2 }}
+                                <ul class="university-details">
+                                  <li><span>{{ pg.uni.chan }}:</span> Viorel Bostan</li>
+                                  <li><span> {{ pg.uni.fnd }}:</span>  1964</li>
+                                  <li><span>{{ pg.uni.nrSt }}:</span> 13.000+</li>
+                                  <li><span>{{ pg.uni.nrFc }}:</span> 9</li>
+                                  <li><span>{{ pg.uni.adds }}:</span> Bulevardul Ștefan cel Mare și Sfînt 168, Chișinău 2004, Moldova </li>
+                                  <li><span>{{ pg.uni.phn }}:</span> +373 22 237 861</li>
+                                </ul>
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -266,12 +298,21 @@
                               <img class="activator" src="img/2.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică din Iaşi<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">{{ pg.uni.iasi1 }}<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="http://www.tuiasi.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică din Iaşi <i class="mdi-navigation-close right"></i></span>
-                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">{{ pg.uni.iasi1 }} <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">{{ pg.uni.iasi2 }}
+                                <ul class="university-details">
+                                  <li><span>{{ pg.uni.chan }}:</span> Dan Cașcaval</li>
+                                  <li><span> {{ pg.uni.fnd }}:</span>  1937</li>
+                                  <li><span>{{ pg.uni.nrSt }}:</span> 12.000+</li>
+                                  <li><span>{{ pg.uni.nrFc }}:</span> 11</li>
+                                  <li><span>{{ pg.uni.adds }}:</span> Bulevardul Profesor Dimitrie Mangeron 67, Iași 700050, România </li>
+                                  <li><span>{{ pg.uni.phn }}:</span> +40 232 278 683</li>
+                                </ul>
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -281,12 +322,21 @@
                               <img class="activator" src="img/3.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Tehnică Cluj-Napoca<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">{{ pg.uni.cluj1 }}<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="http://www.utcluj.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Tehnică Cluj-Napoca <i class="mdi-navigation-close right"></i></span>
-                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">{{ pg.uni.cluj1 }} <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">{{ pg.uni.cluj2 }}
+                                <ul class="university-details">
+                                  <li><span>{{ pg.uni.chan }}:</span> Vasile Țopa</li>
+                                  <li><span> {{ pg.uni.fnd }}:</span>  1920</li>
+                                  <li><span>{{ pg.uni.nrSt }}:</span> 22.000+</li>
+                                  <li><span>{{ pg.uni.nrFc }}:</span> 13</li>
+                                  <li><span>{{ pg.uni.adds }}:</span> Strada Memorandumului 28, Cluj-Napoca 400000, România </li>
+                                  <li><span>{{ pg.uni.phn }}:</span> +40 264 401 200</li>
+                                </ul>
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -296,12 +346,21 @@
                               <img class="activator" src="img/5.jpg">
                           </div>
                           <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4" id="uni-title">Universitatea Transilvania din Brașov<i class="mdi-navigation-more-vert right"></i></span>
+                              <span class="card-title activator grey-text text-darken-4" id="uni-title">{{ pg.uni.bras1 }}<i class="mdi-navigation-more-vert right"></i></span>
                               <p><a href="http://www.unitbv.ro/" target="_blank">Website</a></p>
                           </div>
                           <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4 uni-span">Universitatea Transilvania din Brașov <i class="mdi-navigation-close right"></i></span>
-                              <p class="uni-info">Here is some more information about this project that is only revealed once clicked on.</p>
+                              <span class="card-title grey-text text-darken-4 uni-span">{{ pg.uni.bras1 }} <i class="mdi-navigation-close right"></i></span>
+                              <p class="uni-info">{{ pg.uni.bras2 }}
+                                <ul class="university-details">
+                                  <li><span>{{ pg.uni.chan }}:</span> Ioan Vasile Abrudan</li>
+                                  <li><span> {{ pg.uni.fnd }}:</span>  1948</li>
+                                  <li><span>{{ pg.uni.nrSt }}:</span> 18.500+</li>
+                                  <li><span>{{ pg.uni.nrFc }}:</span> 18</li>
+                                  <li><span>{{ pg.uni.adds }}:</span> Bulevardul Eroilor 29, Brașov 500036, România </li>
+                                  <li><span>{{ pg.uni.phn }}:</span> +40 268 413 000</li>
+                                </ul>
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -309,62 +368,168 @@
               </div>
 
           <div id="test1" class="col s12 wow fadeIn" data-wow-delay="200ms">
-              <p class="center-align">{{ pg.intro.text1ebec }}  </p>
-                <ul class="row center-align" id="">
-                  <!-- <li class="col s12 m6 l4" >
-                        <i class="fa fa-users fa-5x ebec-icons" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h1ebec }} </h5>
-                        <p>{{ pg.intro.p1ebec }}</p>
-                  </li> -->
-                  <li class="col s12 m6 l6" >
-                        <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h2ebec }}</h5>
-                        <p>{{ pg.intro.p2ebec }}</p>
-                  </li>
-                  <li class="col s12 m6 l6" >
-                        <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
-                        <h5>{{ pg.intro.h3ebec }}</h5>
-                        <p>{{ pg.intro.p3ebec }}</p>
-                  </li>
-                </ul>
-                <p class="center-align">{{ pg.intro.text2ebec }}</p>
-                <p class="center-align">{{ pg.intro.text3ebec }}  </p>
+
+            <div class="row">
+              <div class="col s12 m8 l4 "><img src="img/best.png" class="bshit responsive-img ">  </div>
+              <div class="col s12 l8">
+              <h5 class="about-heading">{{ pg.intro.h1ebec }}</h5>
+                <p class="about-best">{{ pg.intro.p1ebec }}  </p>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col s12 m8 l4 "><img class="bshit responsive-img" src="img/final.png">
+             </div>
+              <div class="col s12 l8">
+            <h5 class="about-heading">{{ pg.intro.h2ebec }} </h5>
+                <p class="about-best">{{ pg.intro.p2ebec }}  </p>
+               </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s12 l8">
+            <h5 class="about-heading">{{ pg.intro.h3ebec }}</h5>
+              <p class="about-best">{{ pg.intro.p3ebec }} </p>
+              <ul>
+                <h5 class="about-heading">{{ pg.intro.h4ebec }} </h5>
+                  <li> {{ pg.intro.p4li1 }} </li>
+                  <li> {{ pg.intro.p4li2 }} </li>
+                  <li> {{ pg.intro.p4li3 }} </li>
+              </ul>
+            </div>
+                        <div class="col s12 m8 l4 "><img src="img/pyramid.png" class="bshit responsive-img">  </div>
+          </div>
+                        <!-- <ul class="row " id="">
+                          <li class="col s12 m6 l6" >
+                                <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+                                <h5>{{ pg.intro.h2ebec }}</h5>
+                                <p>Every team has to design and construct a prototype that should satisfy competition requirements. The teams have a certain time limit and have to use tools and materials provided by the organizers or company which give the task.</p>
+                          </li>
+                          <li class="col s12 m6 l6" >
+                                <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                                <h5>{{ pg.intro.h3ebec }}</h5>
+                                <p>Every team has to study a certain real-life or imaginary corporate or other problem and provide a well-described set of solutions for handling such an issue. </p>
+                          </li>
+                        </ul> -->
+
+
+
+                <!-- <p class="center-align">{{ pg.intro.text2ebec }}</p>
+                <p class="center-align">{{ pg.intro.text3ebec }}  </p> -->
+
+                <!-- <div class="row">
+
+                <div class="col s10">
+                                  <p>During the Design Team, the participant will have to solve a practical problem by building a prototype, using a limited set of materials and tools</p>
+                </div>
+                <div class="col s2">
+                  <i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i>
+                  <h6>{{ pg.intro.h3ebec }}</h6>
+                </div>
+                </div> -->
+
+                <!-- <div class="row">
+                <div class="col s2">
+                  <i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
+                  <h6>{{ pg.intro.h2ebec }}</h6>
+                </div>
+                <div class="col s10">
+                  <p>During the Design Team, the participant will have to solve a practical problem by building a prototype, using a limited set of materials and tools</p>
+                </div>
+
+                </div> -->
+
         </div>
 
-          <div id="test2" class="col s12 center-align">
-              <ul class=" " >
+          <div id="test2" class="col s12 ">
 
-                <li class="col s6 m6 l4" >
+            <div class="row">
+
+              <div class="col s12 l6">
+            <h5 class="about-heading">BEST in Romania & Moldova</h5>
+                <ul class="align-left about-best">
+                  <li>BEST Brasov, from 1998, at "Transilvania" University of Brasov</li>
+                  <li>  BEST Bucharest, from 1994, at POLITEHNICA University of Bucharest </li>
+                  <li>  BEST Chisinau, from 2007, at Technical University of Moldova</li>
+                  <li>  BEST Cluj-Napoca, from 1995, at Technical University of Cluj-Napoca</li>
+                  <li>  BEST Iasi, from 2000, at "Gheorghe Asachi" Technical University of Iasi</li>
+                </ul>
+
+               <ul class=" row" >
+                 <li class="col s6 m4 l4" >
+                   <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
+                 <img src="img/locals/brasov.png" class="ebec-icons responsive-img " >
+               </a>
+                 </li>
+
+                 <li class="col s6 m4 l4" >
+                   <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
+                 <img src="img/locals/bucuresti.png" class="ebec-icons responsive-img" >
+               </a>
+                 </li>
+
+                 <li class="col s6 m4 l4" >
+                   <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
+                 <img src="img/locals/chisinau.png" class="ebec-icons responsive-img" >
+               </a>
+                 </li>
+
+                 <li class="col s6 m4 l4" >
+                   <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
+                 <img src="img/locals/cluj.png" class="ebec-icons responsive-img" >
+               </a>
+                 </li>
+
+                 <li class="col s6 m4 l4" >
+                   <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
+                 <img src="img/locals/iasi.png" class="ebec-icons responsive-img " >
+               </a>
+                 </li>
+               </ul>
+               </div>
+
+
+               <div class="col s12 l6 "><img class="bshit responsive-img" src="img/harta2.png">
+              </div>
+          </div>
+            <!-- <div class="center-align">
+              <ul class=" row" >
+                <li class="col s6 m4 l2" >
                   <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
-                <img src="img/locals/brasov.png" class="ebec-icons img-responsive " >
+                <img src="img/locals/brasov.png" class="ebec-icons responsive-img " >
               </a>
                 </li>
 
-                <li class="col s6 m6 l4" >
+                <li class="col s6 m4 l2" >
                   <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
-                <img src="img/locals/bucuresti.png" class="ebec-icons img-responsive" >
+                <img src="img/locals/bucuresti.png" class="ebec-icons responsive-img" >
               </a>
                 </li>
 
-                <li class="col s6 m6 l4" >
+                <li class="col s6 m4 l2" >
                   <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
-                <img src="img/locals/chisinau.png" class="ebec-icons img-responsive" >
+                <img src="img/locals/chisinau.png" class="ebec-icons responsive-img" >
               </a>
                 </li>
 
-                <li class="col s6 m6 l4" >
+                <li class="col s6 m4 l2" >
                   <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
-                <img src="img/locals/cluj.png" class="ebec-icons " >
+                <img src="img/locals/cluj.png" class="ebec-icons responsive-img" >
               </a>
                 </li>
 
-                <li class="col s6 m6 l4" >
+                <li class="col s6 m4 l2" >
                   <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
-                <img src="img/locals/iasi.png" class="ebec-icons " >
+                <img src="img/locals/iasi.png" class="ebec-icons responsive-img " >
               </a>
                 </li>
-
               </ul>
+            </div> -->
+
           </div>
 
 
@@ -380,7 +545,7 @@
     <!--gallery-->
     <div class="section scrollspy" id="gallery">
       <div class="container">
-          <div class="at-section__title wow fadeIn" data-wow-delay="200ms">Gallery</div>
+          <div class="at-section__title wow fadeIn" data-wow-delay="200ms">{{ pg.nav.gl }}</div>
           <!-- <div class="demo-gallery"> -->
           <div class="row">
 
@@ -633,32 +798,32 @@
       <!-- partners -->
         <div class="section scrollspy" id="partners">
           <div class="container">
-                      <div class="at-section__title wow fadeIn" data-wow-delay="200ms">Partners</div>
-                <div class="sponsors-title left-align wow fadeIn" data-wow-delay="250ms">Diamond</div>
+                      <div class="at-section__title wow fadeIn" data-wow-delay="200ms">{{ pg.nav.ptn }}</div>
+                <div class="sponsors-title left-align wow fadeIn" data-wow-delay="250ms">Platinum </div>
                 <ul id="" class=" row">
                 <!-- rand 1 -->
                   <li class="col s6 m4 l3">
                       <a href="">
-                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/diamond1.svg">
+                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/renault.png">
                       </a>
                   </li>
                   <li class="col s6 m4 l3">
                       <a href="">
-                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="300ms"  src="img/logos/diamond2.svg">
+                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="300ms"  src="img/logos/default.png">
                       </a>
                   </li>
                   <li class="col s6 m4 l3">
                       <a href="">
-                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="350ms"  src="img/logos/diamond1.svg">
+                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="350ms"  src="img/logos/default.png">
                       </a>
                   </li>
                   <li class="col s6 m4 l3">
                       <a href="">
-                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/diamond2.svg">
+                          <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/default.png">
                       </a>
                   </li>
                   <!-- rand 1 -->
-                    <li class="col s6 m4 l3">
+                    <!-- <li class="col s6 m4 l3">
                         <a href="">
                             <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/diamond3.svg">
                         </a>
@@ -677,34 +842,34 @@
                         <a href="">
                             <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/diamond1.svg">
                         </a>
-                    </li>
+                    </li> -->
               </ul>
             <!-- platinum sponsors -->
-                    <div class="sponsors-title left-align platinum wow fadeIn" data-wow-delay="250ms">Platinum</div>
+                    <div class="sponsors-title left-align platinum wow fadeIn" data-wow-delay="250ms">Gold </div>
                     <ul class="row">
                     <!-- rand 1 -->
                       <li class="col s6 m4 l3">
                           <a href="">
-                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/diamond2.svg">
+                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/default.png">
                           </a>
                       </li>
                       <li class="col s6 m4 l3">
                           <a href="">
-                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="300ms"  src="img/logos/diamond7.svg">
+                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="300ms"  src="img/logos/default.png">
                           </a>
                       </li>
                       <li class="col s6 m4 l3">
                           <a href="">
-                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="350ms"  src="img/logos/diamond5.svg">
+                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="350ms"  src="img/logos/default.png">
                           </a>
                       </li>
                       <li class="col s6 m4 l3">
                           <a href="">
-                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/diamond6.svg">
+                              <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/default.png">
                           </a>
                       </li>
                       <!-- rand 2 -->
-                        <li class="col s6 m4 l3">
+                        <!-- <li class="col s6 m4 l3">
                             <a href="">
                                 <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/diamond2.svg">
                             </a>
@@ -723,9 +888,37 @@
                             <a href="">
                                 <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/diamond6.svg">
                             </a>
-                        </li>
+                        </li> -->
                   </ul>
 
+
+
+                  <!-- silver sponsors -->
+                          <div class="sponsors-title left-align platinum wow fadeIn" data-wow-delay="250ms">Silver</div>
+                          <ul class="row">
+                          <!-- rand 1 -->
+                            <li class="col s6 m4 l3">
+                                <a href="">
+                                    <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="250ms"  src="img/logos/default.png">
+                                </a>
+                            </li>
+                            <li class="col s6 m4 l3">
+                                <a href="">
+                                    <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="300ms"  src="img/logos/default.png">
+                                </a>
+                            </li>
+                            <li class="col s6 m4 l3">
+                                <a href="">
+                                    <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="350ms"  src="img/logos/default.png">
+                                </a>
+                            </li>
+                            <li class="col s6 m4 l3">
+                                <a href="">
+                                    <img class="img-responsive partners-pics z-depth-1 wow fadeIn" data-wow-delay="400ms"  src="img/logos/default.png">
+                                </a>
+                            </li>
+                            <!-- rand 2 -->
+                        </ul>
 
             </div>
         </div>
@@ -737,7 +930,7 @@
 
       <div class="container team-container center-align">
         <div class="at-section">
-          <div class="at-section__title wow fadeIn" data-wow-delay="100ms">The Team</div>
+          <div class="at-section__title wow fadeIn" data-wow-delay="100ms">{{ pg.nav.tm }}</div>
         </div>
 
         <div class="row">
@@ -746,24 +939,21 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="200ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/lucian.jpg"/></div>
-              <div class="at-user__name">Lucian Stan</div>
-              <div class="at-user__title">Regional Coordinator</div>
+              <div class="at-user__name">Stan Lucian</div>
+              <div class="at-user__title">{{ pg.team.nr1 }}</div>
               <ul class="at-social">
 
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.youtube.com/watch?v=RcNrQNOLh_4" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.youtube.com/watch?v=RcNrQNOLh_4" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="mailto:lucian.stan@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:lucian.stan@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
 
               </ul>
@@ -773,23 +963,20 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="250ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/amy.jpg"/></div>
-              <div class="at-user__name">Ana-Maria Brinza</div>
-              <div class="at-user__title">Local Coordinator</div>
+              <div class="at-user__name">Brinza Ana-Maria</div>
+              <div class="at-user__title">{{ pg.team.nr2 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.facebook.com/brinza.anamaria.7" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/brinza.anamaria.7" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.linkedin.com/in/ana-maria-brinza-386284103?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="https://www.linkedin.com/in/ana-maria-brinza-386284103?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="mailto:ana-maria.brinza@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:ana-maria.brinza@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
               </ul>
             </div>
@@ -797,23 +984,20 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="300ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/pava.jpg"/></div>
-              <div class="at-user__name">Bogdan Pavalasc</div>
-              <div class="at-user__title">Secretary</div>
+              <div class="at-user__name">Pavalasc Bogdan</div>
+              <div class="at-user__title">{{ pg.team.nr3 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.facebook.com/bogdan.pavalasc?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/bogdan.pavalasc?fref=ts" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="mailto:bogdan.pavalasc@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:bogdan.pavalasc@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
               </ul>
             </div>
@@ -821,22 +1005,22 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="350ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/zara2.jpg"/></div>
-              <div class="at-user__name">Monica Zara</div>
-              <div class="at-user__title">Fundraising</div>
+              <div class="at-user__name">Zara Monica</div>
+              <div class="at-user__title">{{ pg.team.nr4 }}</div>
               <ul class="at-social">
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                    <a href="https://www.facebook.com/zara.monica.3?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/zara.monica.3?fref=ts" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                   </a>
                 </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                   </a>
                 </li>
                 <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
+                    <a href="mailto:monica.zara@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:monica.zara@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i></a>
                   </a>
                 </li>
               </ul>
@@ -845,23 +1029,20 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="400ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/ioana.jpg"/></div>
-              <div class="at-user__name">Adelina David</div>
-              <div class="at-user__title">Human Resources</div>
+              <div class="at-user__name">David Adelina</div>
+              <div class="at-user__title">{{ pg.team.nr5 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.facebook.com/adelina.david.75?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/adelina.david.75?fref=ts" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="mailto:adelina.david@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:adelina.david@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i> </a>
                 </li>
               </ul>
             </div>
@@ -869,23 +1050,21 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="450ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/flori2.jpg"/></div>
-              <div class="at-user__name">Florentina Draghici</div>
-              <div class="at-user__title">Topics</div>
+              <div class="at-user__name">Draghici Florentina</div>
+              <div class="at-user__title">{{ pg.team.nr6 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.facebook.com/florentina.georgiana.338?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/florentina.georgiana.338?fref=ts" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
+
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.linkedin.com/in/dr%C4%83ghici-florentina-georgiana-a0757b108/" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                    <a href="https://www.linkedin.com/in/dr%C4%83ghici-florentina-georgiana-a0757b108/" target="_blank"><i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="mailto:florentina.draghici@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                    <a href="mailto:florentina.draghici@BEST.eu.org" target="_blank"><i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
               </ul>
             </div>
@@ -893,23 +1072,20 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="500ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/grig.jpg"/></div>
-              <div class="at-user__name">Stefan Andrei</div>
-              <div class="at-user__title">Design</div>
+              <div class="at-user__name">Grigoras Stefan</div>
+              <div class="at-user__title">{{ pg.team.nr7 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="https://www.facebook.com/adyice?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/adyice?fref=ts" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                  <a href="#" target="_blank">  <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+            <a href="mailto:stefan.andrei.grigoras@BEST.eu.org" target="_blank">   <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+            <a href="mailto:stefan.andrei.grigoras@BEST.eu.org" target="_blank">   <i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
               </ul>
             </div>
@@ -917,23 +1093,20 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="550ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/teo.jpg"/></div>
-              <div class="at-user__name">Teodora Farcas</div>
-              <div class="at-user__title">Marketing</div>
+              <div class="at-user__name">Farcas Teodora</div>
+              <div class="at-user__title">{{ pg.team.nr8 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                  <a href="https://www.facebook.com/teodora.farcas.18" target="_blank">  <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                  <a href="https://www.facebook.com/teodora.farcas.18" target="_blank">  <i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+              <a href="https://www.linkedin.com/in/teodora-farcas-682103110?trk=nav_responsive_tab_profile_pic" target="_blank">       <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+                <a href="https://www.linkedin.com/in/teodora-farcas-682103110?trk=nav_responsive_tab_profile_pic" target="_blank">     <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+                <a href="mailto:farcas.teodora@BEST.eu.org" target="_blank">       <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+                <a href="mailto:farcas.teodora@BEST.eu.org" target="_blank">       <i class="fa fa-envelope-o hide-on-large-only"></i></a>
                 </li>
               </ul>
             </div>
@@ -941,23 +1114,22 @@
           <div class="at-column col s6 m4 l4 wow fadeIn" data-wow-delay="600ms">
             <div class="at-user">
               <div class="at-user__avatar"><img src="img/team/vasile2.jpg"/></div>
-              <div class="at-user__name">Vasile Taranovici</div>
-              <div class="at-user__title">IT</div>
+              <div class="at-user__name">Taranovici Vasile </div>
+              <div class="at-user__title">{{ pg.team.nr9 }}</div>
               <ul class="at-social">
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+              <a href="https://www.facebook.com/vasile.taranovici" target="_blank">      <i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+              <a href="https://www.facebook.com/vasile.taranovici" target="_blank">      <i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i>
-                    <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+              <a href="https://www.linkedin.com/in/vasile-taranovici-124260a7" target="_blank">      <i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
+              <a href="https://www.linkedin.com/in/vasile-taranovici-124260a7" target="_blank">      <i class="fa fa-linkedin-square  team-linkedin hide-on-large-only"></i></a>
+
                 </li>
-                <li class="at-social__item"><a href="">
-                    <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i>
-                    <i class="fa fa-facebook-square hide-on-large-only"></i>
-                  </a>
+                <li class="at-social__item">
+              <a href="mailto:vasile.taranovici@BEST.eu.org" target="_blank">      <i class="fa fa-envelope-o fa-2x hide-on-med-and-down"></i></a>
+              <a href="mailto:vasile.taranovici@BEST.eu.org" target="_blank">      <i class="fa fa-envelope-o hide-on-large-only"></i></a>
+
                 </li>
               </ul>
             </div>
@@ -973,14 +1145,13 @@
 
   <!-- testimonials -->
   <div class="section scrollspy center-align" id="testimonials">
-    <div class="at-section__title wow fadeIn" data-wow-delay="200ms">Testimonials</div>
+    <div class="at-section__title wow fadeIn" data-wow-delay="200ms">{{ pg.nav.test }}</div>
 
         <ul class="testimonial-list container owl-carousel owl-theme center-align" data-responsive='{"0":{"items":"1"}, "481":{"items":"2"},  "1025":{"items":"3"}}'>
           <li>
               <figure class="snip1139 wow fadeIn" data-wow-delay="300ms">
                 <blockquote class="testimonial-quote">
-                  Pentru Bosch EBEC reprezintă o competiție în care fiecare angajator ar trebui să investească pentru că reprezintă o oportunitate bună de a identifica talente, de a veni cu probe interesante la care studenții au posibilitatea și dorinta să lucreze.
-                  Bosch susține în continuare EBEC!
+                  {{ pg.testmn.bsc }}
                   <div class="arrow"></div>
                 </blockquote>
                 <img src="img/sample0.png" alt="sample3"/>
@@ -989,13 +1160,22 @@
                 </div>
               </figure>
           </li>
-
+            <li>
+              <figure class="snip1139 hover wow fadeIn" data-wow-delay="330ms">
+                <blockquote class="testimonial-quote">
+                      {{ pg.testmn.ren }}
+                  <div class="arrow"></div>
+                </blockquote>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample47"/>
+                <div class="author">
+                  <h5>Bita Elena<span>- Renault Group</span></h5>
+                </div>
+              </figure>
+            </li>
           <li>
               <figure class="snip1139 wow fadeIn" data-wow-delay="350ms">
-                <!-- <blockquote class="testimonial-quote">Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us. -->
-              <blockquote class="testimonial-quote">În urma primei probe ne-am clasat pe locul 5, dar în urma punctajului final, am obţinut locul 7.
-                  Important este faptul că am ajuns până acolo şi că am reprezentat cu mândrie România şi Republica Moldova la un concurs European de inginerie care-i aduce în prim plan pe cei mai buni studenţi.
-
+              <blockquote class="testimonial-quote">
+                  {{ pg.testmn.pax1 }}
                   <div class="arrow"></div>
                 </blockquote>
                 <img src="img/sample3.png" alt="sample3"/>
@@ -1009,8 +1189,7 @@
           <li>
             <figure class="snip1139 hover  wow fadeIn" data-wow-delay="400ms">
               <blockquote class="testimonial-quote">
-Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de dinainte a concursului noul program Fusion 360, astfel încât să fim capabili să ne modelăm 3D, prototipul propus.
-                Probele au fost adevărate provocări, însă până la urmă acesta este farmecul acestui concurs.
+                  {{ pg.testmn.pax2 }}
                 <div class="arrow"></div>
               </blockquote>
               <img src="img/sample4.png" alt="sample47"/>
@@ -1022,8 +1201,8 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
 
           <li>
             <figure class="snip1139">
-              <blockquote class="testimonial-quote">Participarea la etapa internațională a EBEC a fost pentru noi o experiența constructivă, însăși prin natura sa provocatoare.
-                 Această competiție ne-a provocat să dăm tot ce este mai bun în fața a zeci de tineri de diferite naționalități, la fel de pasionați și motivați ca noi.
+              <blockquote class="testimonial-quote">
+                  {{ pg.testmn.pax3 }}
                 <div class="arrow"></div>
               </blockquote>
               <img src="img/sample5.png" alt="sample17"/>
@@ -1034,19 +1213,7 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
           </li>
 
 
-          <li>
-            <figure class="snip1139 hover">
-              <blockquote class="testimonial-quote">I don't need to compromise on my principles, because they don't have the slightest bearing on what happens to me anyway.
-                <div class="arrow"></div>
-              </blockquote>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47"/>
-              <div class="author">
-                <h5>Max Conversion<span>- Ubisoft</span></h5>
-              </div>
-            </figure>
-          </li>
-
-          <li>
+          <!-- <li>
             <figure class="snip1139">
               <blockquote class="testimonial-quote">That's the problem with nature, something's always stinging you or oozing mucous all over you. Let's go and watch TV.
                 <div class="arrow"></div>
@@ -1056,7 +1223,7 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
                 <h5>Eleanor Faint<span>- Endava</span></h5>
               </div>
             </figure>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -1129,7 +1296,7 @@ Pentru proba pregatită de Autodesk, a trebuit să învățăm în perioada de d
     <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color:#4A6629; padding-top: 1.75rem; padding-bottom: 1.75rem;">
 
         <div class="container align-center">
-            <p class="align-center" style="color: #f5f5f5; text-align: center;">Copyright (c) 2017 EBEC R&M 2017.</p>
+            <p class="align-center" style="color: #f5f5f5; text-align: center;">Copyright © EBEC R&RM 2017.</p>
         </div>
     </footer>
 </div>

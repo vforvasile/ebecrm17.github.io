@@ -492,7 +492,7 @@ nav a.button-collapse {
 
 #uni-title {
     line-height: 20px;
-    font-size: 16px;
+    font-size: 15px;
 
 }
 .card-content p {
@@ -504,8 +504,12 @@ nav a.button-collapse {
 .uni-info {
   font-size: 12px;
 }
-
-
+.university-details {
+  font-size: 13px;
+}
+.university-details span {
+  font-weight: 800;
+}
 
 
 .card .card-content p {
@@ -551,14 +555,6 @@ footer.page-footer {
 
 .navbar-user {
   z-index: 99;
-}
-
-#index-banner {
-    /*min-height: 1024px;
-    max-height: 1280px;*/
-    position: relative;
-    background: url("http://ui.specbee.com/sample/videoframe.jpg") center center/cover no-repeat;
-    /*background-color: #f5f5f5;*/
 }
 
 #about-section {
@@ -821,8 +817,14 @@ nav a.button-collapse i {
 .brand-logo img {
     margin-top: 7px;
   }
-
-
+  .partners-pics {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+.ebec-icons {
+  opacity: 1;
+}
 }
 
 @media only screen and (min-width: 320px){
@@ -832,6 +834,7 @@ nav a.button-collapse,
 nav a.button-collapse i {
     height: 64px;
     line-height: 64px;
+    left: 0px;
     }
 #logo-container{
     /*height: 64px;*/
@@ -844,7 +847,9 @@ nav a.button-collapse i {
     /*width: 140px;
     margin-top: 4px;*/
   }
-
+  .ebec-icons {
+    opacity: 1;
+  }
   .at-section__title {
     margin: 0 0 20px;
     padding-top: 10px;
@@ -857,6 +862,7 @@ padding-bottom: 15px;
   .partners-pics {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+        opacity: 1;
   }
   #about-section a {
     font-size: 13px;
@@ -909,6 +915,7 @@ figure.snip1139 {
   .brand-logo {
     margin-left: 50%;
   }
+
 
 }
 @media screen and (min-width:1280px){
@@ -1025,9 +1032,14 @@ Footer
   /*margin: 0;*/
   padding-bottom: 50px;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
+.contest-box {
+  width: 300px;
+  height: 600px;
+    margin-top: 50px;
+}
 
 #contest-badge {
 min-width: 2.7rem;
@@ -1111,7 +1123,7 @@ video#bgvid {
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Oswald:400,700);
 
 .delta {
   font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */
@@ -1172,3 +1184,22 @@ video#bgvid {
   left: 25%;
 	text-align: center;
 }
+
+.about-best {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.about-heading {
+  font-size: 1.34rem;
+  font-weight: 400;
+}
+
+/*.contest-section {
+    margin-top: 14.5rem;
+}*/
+/*.mob-slider .slides li {
+  height: 520px;
+}
+.mob-slider {
+
+}*/

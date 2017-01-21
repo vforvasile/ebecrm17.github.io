@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	$('.preloader-wrapper')
 		.delay(500)
-		.fadeOut();
+		.fadeIn();
 });
 
 
