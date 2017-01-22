@@ -84,13 +84,16 @@
   <div id="app">
 
     <!--Navigation-->
+    <header>
     <div class="navbar-fixed navbar-user">
       <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#top" id="logo-container" class="brand-logo">
-              <img src="img/ebec.png">
-            </a>
+                        <!-- logo in navbar -->
+            <a href="#top" id="logo-container" class="brand-logo"><img src="img/ebec.png"></a>
+            <!-- Menu Mobile -->
+            <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
+
             <ul class="right hide-on-med-and-down navigation-ul ">
               <li><a href="#intro" class="waves-effect" v-bind:class="pg.nav.about">{{ pg.nav.abt }}</a></li>
               <li><a href="#gallery" class="waves-effect" v-bind:class="pg.nav.gallery">{{ pg.nav.gl }}</a></li>
@@ -105,6 +108,10 @@
                 <img class="lang-switch" src="img/ro.png"></img>
               </a>
             </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
             <ul id="nav-mobile" class="side-nav">
               <li><a href="#intro" class="waves-effect">{{ pg.nav.abt }}</a></li>
@@ -116,11 +123,13 @@
               <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('English', 3000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
               <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Română', 3000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
-          </div>
-        </div>
-      </nav>
-    </div>
+
+
+</header>
+
+
+
+
 
 
   <!-- <div class="Playful type hide-on-med-and-down center-align"> -->
