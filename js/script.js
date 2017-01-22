@@ -1,4 +1,5 @@
 /* globals Vue */
+// Vue here
 'use strict'
 
 var en = {
@@ -164,3 +165,5 @@ var app = new Vue({
 })
 
 // console.log(app)
+
+// VUe here
