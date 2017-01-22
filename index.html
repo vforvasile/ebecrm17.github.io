@@ -33,7 +33,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"> -->
   <!-- Icons -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/fonts/materialdesignicons-webfont.svg" type="text/css" rel="stylesheet" > -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
 
   <!-- CSS  -->
@@ -45,10 +45,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <!-- carousel -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" type="text/css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" type="text/css" rel="stylesheet"> -->
 
   <!-- custom css -->
-  <link rel="stylesheet" href="css/mobi.css">
+  <!-- <link rel="stylesheet" href="css/mobi.css"> -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
 
 
@@ -100,7 +100,7 @@
               <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToEn" onclick="Materialize.toast('Translated in English', 3000)">
                 <img class="lang-switch" src="img/uk.png"></img>
               </a>
-              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToRo" onclick="Materialize.toast('Tradus in Romana', 3000)">
+              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToRo" onclick="Materialize.toast('Tradus in Română', 3000)">
                 <img class="lang-switch" src="img/ro.png"></img>
               </a>
 
@@ -112,8 +112,8 @@
               <li><a href="#team" class="waves-effect">{{ pg.nav.tm }}</a></li>
               <li><a href="#testimonials" class="waves-effect">{{ pg.nav.test}}</a></li>
               <li><a href="#contact" class="waves-effect">{{ pg.nav.ct }}</a></li>
-              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English - swipe left or right to close', 4000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
-              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Romana - gliseaza dreapta sau stanga', 4000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
+              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English', 3000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
+              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Română', 3000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
           </div>
@@ -246,7 +246,7 @@
           <div id="test4">
             <div class="col s12 m6 l4 uni-col">
                       <div class="card medium " id="uni-card" >
-                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/4.jpg" >
                           </div>
                           <div class="card-content">
@@ -270,7 +270,7 @@
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/1.jpg">
                           </div>
                           <div class="card-content">
@@ -294,7 +294,7 @@
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="right" data-delay="50" data-tooltip="Read more">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture" >
                               <img class="activator" src="img/2.jpg">
                           </div>
                           <div class="card-content">
@@ -318,7 +318,7 @@
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="left" data-delay="50" data-tooltip="Read more">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/3.jpg">
                           </div>
                           <div class="card-content">
@@ -342,7 +342,7 @@
                   </div>
                   <div class="col s12 m6 l4 uni-col">
                       <div class="card medium" id="uni-card">
-                          <div class="card-image waves-effect waves-block waves-light uni-picture tooltipped" data-position="right" data-delay="50" data-tooltip="Read more">
+                          <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/5.jpg">
                           </div>
                           <div class="card-content">
@@ -1310,29 +1310,23 @@
 
 
     <!--  Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
     <!-- materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
 
     <!-- GreenStock effects -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
 
     <!-- For Gallery EBEC15 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/blueimp-gallery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/blueimp-gallery-fullscreen.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/blueimp-gallery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/blueimp-gallery-fullscreen.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.22.0/js/jquery.blueimp-gallery.min.js"></script>
     <!-- animatii -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <!-- Contest -->
-<script>
-
-
-</script>
     <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
