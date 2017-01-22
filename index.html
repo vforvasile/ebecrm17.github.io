@@ -97,10 +97,10 @@
               <li><a href="#team" class="waves-effect" v-bind:class="pg.nav.team">{{ pg.nav.tm }}</a></li>
               <li><a href="#testimonials" class="waves-effect" v-bind:class="pg.nav.testimonials">{{ pg.nav.test}}</a></li>
               <li><a href="#contact" class="waves-effect" v-bind:class="pg.nav.contact">{{ pg.nav.ct }}</a></li>
-              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToEn" onclick="Materialize.toast('Translated in English', 3000)">
+              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToEn" onclick="Materialize.toast('English', 3000)">
                 <img class="lang-switch" src="img/uk.png"></img>
               </a>
-              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToRo" onclick="Materialize.toast('Tradus in Română', 3000)">
+              <a class="btn-floating waves-effect waves-light" id="lang-button" v-on:click="changeToRo" onclick="Materialize.toast('Română', 3000)">
                 <img class="lang-switch" src="img/ro.png"></img>
               </a>
 
@@ -112,8 +112,8 @@
               <li><a href="#team" class="waves-effect">{{ pg.nav.tm }}</a></li>
               <li><a href="#testimonials" class="waves-effect">{{ pg.nav.test}}</a></li>
               <li><a href="#contact" class="waves-effect">{{ pg.nav.ct }}</a></li>
-              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('Switched to English', 3000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
-              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Tradus in Română', 3000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
+              <li><a v-on:click="changeToEn" class="waves-effect waves-light" onclick="Materialize.toast('English', 3000)"><img class="mob-switch" src="img/uk.png"></img></a></li>
+              <li><a v-on:click="changeToRo" class="waves-effect waves-light" onclick="Materialize.toast('Română', 3000)" ><img class="mob-switch " src="img/ro.png"></img></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
           </div>
@@ -446,10 +446,40 @@
         </div>
 
           <div id="test2" class="col s12 ">
+            <ul class="center-align " >
+              <li class="col s4 m4 l2 offset-l1" >
+                <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
+              <img src="img/locals/brasov.png" class="ebec-icons responsive-img " >
+            </a>
+              </li>
+
+              <li class="col s4 m4 l2" >
+                <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
+              <img src="img/locals/bucuresti.png" class="ebec-icons responsive-img" >
+            </a>
+              </li>
+
+              <li class="col s4 m4 l2" >
+                <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
+              <img src="img/locals/chisinau.png" class="ebec-icons responsive-img" >
+            </a>
+              </li>
+
+              <li class="col s4 m4 l2" >
+                <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
+              <img src="img/locals/cluj.png" class="ebec-icons responsive-img" >
+            </a>
+              </li>
+
+              <li class="col s4 m4 l2" >
+                <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
+              <img src="img/locals/iasi.png" class="ebec-icons responsive-img " >
+            </a>
+              </li>
+            </ul>
 
             <div class="row">
-
-              <div class="col s12 l6">
+              <div class="col s12 l5">
             <h5 class="about-heading">BEST in Romania & Moldova</h5>
                 <ul class="align-left about-best">
                   <li>BEST Brasov, from 1998, at "Transilvania" University of Brasov</li>
@@ -459,41 +489,10 @@
                   <li>  BEST Iasi, from 2000, at "Gheorghe Asachi" Technical University of Iasi</li>
                 </ul>
 
-               <ul class=" row" >
-                 <li class="col s6 m4 l4" >
-                   <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
-                 <img src="img/locals/brasov.png" class="ebec-icons responsive-img " >
-               </a>
-                 </li>
-
-                 <li class="col s6 m4 l4" >
-                   <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
-                 <img src="img/locals/bucuresti.png" class="ebec-icons responsive-img" >
-               </a>
-                 </li>
-
-                 <li class="col s6 m4 l4" >
-                   <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
-                 <img src="img/locals/chisinau.png" class="ebec-icons responsive-img" >
-               </a>
-                 </li>
-
-                 <li class="col s6 m4 l4" >
-                   <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
-                 <img src="img/locals/cluj.png" class="ebec-icons responsive-img" >
-               </a>
-                 </li>
-
-                 <li class="col s6 m4 l4" >
-                   <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
-                 <img src="img/locals/iasi.png" class="ebec-icons responsive-img " >
-               </a>
-                 </li>
-               </ul>
                </div>
 
 
-               <div class="col s12 l6 "><img class="bshit responsive-img" src="img/harta2.png">
+               <div class="col s12 l7 "><img class="bshit responsive-img" src="img/harta2.png">
               </div>
           </div>
             <!-- <div class="center-align">
@@ -547,12 +546,13 @@
       <div class="container">
           <div class="at-section__title wow fadeIn" data-wow-delay="200ms">{{ pg.nav.gl }}</div>
           <!-- <div class="demo-gallery"> -->
+
           <div class="row">
 
 
         <div id="links" class="links">
 
-          <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Brașov </h6>
+          <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Brasov </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/brasov_1.jpg" data-gallery>
               <img src="img/ebec/thumb/brasov_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
@@ -592,7 +592,7 @@
 
 <!-- Lateeeeeeeeeeeeeeeeer -->
 
-          <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Bucharest </h6>
+          <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Bucharest </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/bucuresti_1.jpg" data-gallery>
               <img src="img/ebec/thumb/bucuresti_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
@@ -636,7 +636,7 @@
 
 
 
-          <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Chișinău </h6>
+          <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Chisinau </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/chisinau_1.jpg" data-gallery>
               <img src="img/ebec/thumb/chisinau_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
@@ -678,7 +678,7 @@
 
 
 
-          <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Cluj-Napoca </h6>
+          <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Cluj-Napoca </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/cluj_1.jpg" data-gallery>
               <img src="img/ebec/thumb/cluj_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
@@ -720,7 +720,7 @@
 
 
 
-          <h6 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Iași</h6>
+          <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Iasi</h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/iasi_1.jpg" data-gallery>
               <img src="img/ebec/thumb/iasi_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
