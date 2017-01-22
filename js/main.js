@@ -1,19 +1,18 @@
 (function($) {
     $(function() {
-        $('.button-collapse').sideNav();
-        // $('.scrollspy').scrollSpy({scrollOffset:0});
+      // menu collapse
+              $('.button-collapse').sideNav({
+                  menuWidth: 200,
+                  edge: 'left',
+                  closeOnClick: true,
+                  draggable: false
+              });
 
 
         $('.scrollspy').scrollSpy({scrollOffset: 50});
 
 
-// menu collapse
-        $('.button-collapse').sideNav({
-            menuWidth: 200,
-            edge: 'left',
-            closeOnClick: true,
-            draggable: false,
-        });
+
 // animation
         new WOW().init();
     });
