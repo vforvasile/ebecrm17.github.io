@@ -11,7 +11,7 @@
         $('.button-collapse').sideNav({
             menuWidth: 240,
             edge: 'left',
-            // closeOnClick: true
+            closeOnClick: true
         });
 // animation
         new WOW().init();
