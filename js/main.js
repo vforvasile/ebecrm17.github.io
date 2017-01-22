@@ -9,10 +9,10 @@
 
 // menu collapse
         $('.button-collapse').sideNav({
-            menuWidth: 240,
+            menuWidth: 200,
             edge: 'left',
             closeOnClick: true,
-            draggable: false
+            draggable: false,
         });
 // animation
         new WOW().init();

@@ -686,26 +686,6 @@ nav .button-collapse i {
 }
 
 
-#lang-button {
-    display: inline-block;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    width: 32px;
-    height: 24px;
-    line-height: 18px;
-    padding: 0;
-    background-color: #transparent;
-    border-radius: 0;
-    transition: .3s;
-    cursor: pointer;
-    vertical-align: middle;
-    margin-right: 10px;
-    margin-left: 5px;
-    margin-top: 7px;
-    /*opacity: 0.5;*/
-}
 /*#lang-button-eng:hover,
 #lang-button-eng:active,
 #lang-button-eng:focus,
@@ -1391,10 +1371,10 @@ figure.snip1139 {
 
 /* mobile tabs */
 .tab-link {
-  width: 40px !important;
-  min-width: 76px !important;
+  /*width: 40px !important;
+  min-width: 76px !important;*/
   text-transform: capitalize !important;
-  text-overflow: ellipsis;
+  /*text-overflow: ellipsis;*/
   overflow: hidden;
   letter-spacing: .5px !important;
 }
@@ -1751,4 +1731,32 @@ nav ul a {
     opacity: 1;
     border-bottom: 4px solid #69963F;
     transition: all .10s ease-in-out;
+}
+
+#lang-button {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 32px;
+    height: 24px;
+    line-height: 18px;
+    padding: 0;
+    background-color: #transparent;
+    border-radius: 0;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 7px;
+    /*opacity: 0.5;*/
+}
+#lang-button:active,
+#lang-button:focus {
+  border-bottom: none;
+}
+#lang-button:hover {
+  opacity: 1;
 }

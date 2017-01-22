@@ -48,7 +48,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" type="text/css" rel="stylesheet">
 
   <!-- custom css -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" type="text/css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/mobi.css"> -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
 
@@ -92,7 +92,7 @@
                         <!-- logo in navbar -->
             <a href="#top" id="logo-container" class="brand-logo"><img src="img/ebec.png"></a>
             <!-- Menu Mobile -->
-            <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="fa fa-2x fa-bars" aria-hidden="true"></i></a>
 
             <ul class="right hide-on-med-and-down navigation-ul ">
               <li><a href="#intro" class="waves-effect" v-bind:class="pg.nav.about">{{ pg.nav.abt }}</a></li>
@@ -141,7 +141,7 @@
 
 
   <!-- <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down "data-wow-delay="200ms" aria-hidden="true"><a href="#"><i class="mbr-arrow-icon"></i></a></div> -->
-  <div class="mbr-arrow mbr-arrow-floating wow fadeIn  wow zoomInDown hide-on-med-and-down" data-wow-delay="1200ms"   aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
+  <div class="mbr-arrow mbr-arrow-floating wow fadeIn  wow zoomInDown hide-on-med-and-down" data-wow-delay="500ms"   aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
 <!-- data-wow-delay="1500ms" data-wow-duration="3s" -->
 
 <div class="scrollspy hide-on-large-only" id="intro2">
@@ -233,27 +233,24 @@
       <div class="container">
         <!-- <h2 class="header text_b">{{ pg.intro.header }}</h2> -->
         <div class="at-section__title wow fadeIn" data-wow-delay="100ms">{{ pg.intro.header }}</div>
-        <div class="row">
-          <div class="col s12">
+        <!-- <div class="row"> -->
 
-            <ul class="tabs wow fadeIn" id="about-section" data-wow-delay="70ms">
-            <!-- Mod 1 -->
-            <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="active waves-effect " href="#test1">BEST & EBEC</a></li>
-
-            <!-- Mod 2 -->
-              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="waves-effect " href="#test1">BEST & EBEC</a></li> -->
+<div class="row">
+            <!-- <ul class="tabs wow fadeIn" id="about-section" data-wow-delay="70ms">
+              <li class="tab  tab-link wow fadeIn" data-wow-delay="100ms"><a class="active waves-effect " href="#test1">BEST & EBEC</a></li>
               <li class="tab  tab-link wow fadeIn" data-wow-delay="130ms"><a class="waves-effect" href="#test2">Romania & Moldova</a></li>
-              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="140ms"><a class="waves-effect" href="#test3" >BEST</a></li> -->
               <li class="tab  tab-link wow fadeIn" data-wow-delay="160ms"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
-  <!-- Active plus first 2 -->
-              <!-- <li class="tab  tab-link wow fadeIn" data-wow-delay="190ms"><span class="new badge red hide-on-med-and-down" id="contest-badge"></span><a class="waves-effect active" href="#test5" > Contest </a></li> -->
-<!-- Disabled below Mod 1 -->
-              <!-- <li class="tab  tab-link wow fadeIn disabled"  style="opacity: 0.5" data-wow-delay="190ms"><span class="new badge red hide-on-med-and-down" id="contest-badge"></span><a class="waves-effect" href="#test5"> Contest </a></li> -->
-
-            </ul>
-          </div>
+            </ul> -->
+            <div class="col s12">
+             <ul class="tabs wow fadeIn" id="about-section" data-wow-delay="70ms">
+                <li class="tab col s3 l4 tab-link wow fadeIn" data-wow-delay="100ms"><a class="active waves-effect " href="#test1">BEST & EBEC</a></li>
+                <li class="tab col s3 l4 tab-link wow fadeIn" data-wow-delay="130ms"><a class="waves-effect" href="#test2">Romania & Moldova</a></li>
+                <li class="tab col s3 l4 tab-link wow fadeIn" data-wow-delay="160ms"><a class="waves-effect" href="#test4" > {{ pg.intro.tab4 }} </a></li>
+              </ul>
+            </div>
 
           <div id="test4">
+            <div class="row">
             <div class="col s12 m6 l4 uni-col">
                       <div class="card medium " id="uni-card" >
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
@@ -376,6 +373,7 @@
                   </div>
 
               </div>
+            </div>
 
           <div id="test1" class="col s12 wow fadeIn" data-wow-delay="200ms">
 
@@ -386,8 +384,6 @@
                 <p class="about-best">{{ pg.intro.p1ebec }}  </p>
               </div>
             </div>
-
-
 
             <div class="row">
               <div class="col s12 m8 l4 "><img class="bshit responsive-img" src="img/final.png">
@@ -413,49 +409,12 @@
             </div>
                         <div class="col s12 m8 l4 "><img src="img/pyramid.png" class="bshit responsive-img">  </div>
           </div>
-                        <!-- <ul class="row " id="">
-                          <li class="col s12 m6 l6" >
-                                <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
-                                <h5>{{ pg.intro.h2ebec }}</h5>
-                                <p>Every team has to design and construct a prototype that should satisfy competition requirements. The teams have a certain time limit and have to use tools and materials provided by the organizers or company which give the task.</p>
-                          </li>
-                          <li class="col s12 m6 l6" >
-                                <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
-                                <h5>{{ pg.intro.h3ebec }}</h5>
-                                <p>Every team has to study a certain real-life or imaginary corporate or other problem and provide a well-described set of solutions for handling such an issue. </p>
-                          </li>
-                        </ul> -->
-
-
-
-                <!-- <p class="center-align">{{ pg.intro.text2ebec }}</p>
-                <p class="center-align">{{ pg.intro.text3ebec }}  </p> -->
-
-                <!-- <div class="row">
-
-                <div class="col s10">
-                                  <p>During the Design Team, the participant will have to solve a practical problem by building a prototype, using a limited set of materials and tools</p>
-                </div>
-                <div class="col s2">
-                  <i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i>
-                  <h6>{{ pg.intro.h3ebec }}</h6>
-                </div>
-                </div> -->
-
-                <!-- <div class="row">
-                <div class="col s2">
-                  <i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
-                  <h6>{{ pg.intro.h2ebec }}</h6>
-                </div>
-                <div class="col s10">
-                  <p>During the Design Team, the participant will have to solve a practical problem by building a prototype, using a limited set of materials and tools</p>
-                </div>
-
-                </div> -->
-
         </div>
 
+
+
           <div id="test2" class="col s12 ">
+            <div class="row">
             <ul class="center-align " >
               <li class="col s4 m4 l2 offset-l1" >
                 <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
@@ -487,6 +446,7 @@
             </a>
               </li>
             </ul>
+          </div>
 
             <div class="row">
               <div class="col s12 l5">
@@ -500,53 +460,18 @@
                 </ul>
 
                </div>
-
-
                <div class="col s12 l7 "><img class="bshit responsive-img" src="img/harta2.png">
               </div>
           </div>
-            <!-- <div class="center-align">
-              <ul class=" row" >
-                <li class="col s6 m4 l2" >
-                  <a href="https://www.facebook.com/BESTBrasov" class="waves-effect" target="_blank">
-                <img src="img/locals/brasov.png" class="ebec-icons responsive-img " >
-              </a>
-                </li>
 
-                <li class="col s6 m4 l2" >
-                  <a href="http://bestbucuresti.ro/ebec/" class="waves-effect" target="_blank">
-                <img src="img/locals/bucuresti.png" class="ebec-icons responsive-img" >
-              </a>
-                </li>
-
-                <li class="col s6 m4 l2" >
-                  <a href="https://www.facebook.com/EBEC.Chisinau" class="waves-effect" target="_blank">
-                <img src="img/locals/chisinau.png" class="ebec-icons responsive-img" >
-              </a>
-                </li>
-
-                <li class="col s6 m4 l2" >
-                  <a href="http://ebec.bestcj.ro/" class="waves-effect" target="_blank">
-                <img src="img/locals/cluj.png" class="ebec-icons responsive-img" >
-              </a>
-                </li>
-
-                <li class="col s6 m4 l2" >
-                  <a href="http://ebec.bestis.ro/" class="waves-effect" target="_blank">
-                <img src="img/locals/iasi.png" class="ebec-icons responsive-img " >
-              </a>
-                </li>
-              </ul>
-            </div> -->
-
-          </div>
+      </div>
+</div>     <!-- row end-->
 
 
 
 
 
 
-          </div>
         </div>
       </div>
     <!-- </div> -->
@@ -1338,7 +1263,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="js/script.js"></script> -->
 
