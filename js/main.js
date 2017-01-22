@@ -11,7 +11,8 @@
         $('.button-collapse').sideNav({
             menuWidth: 240,
             edge: 'left',
-            closeOnClick: true
+            closeOnClick: true,
+            draggable: false
         });
 // animation
         new WOW().init();
@@ -93,7 +94,9 @@ $(document).ready(function()
 
 // slider mtz
 $(document).ready(function(){
-  $('.slider').slider({full_width: true});
+  $('.slider').slider({full_width: true,
+  height:550});
+  // $('.slider').slider({height:140});
 });
 
 
