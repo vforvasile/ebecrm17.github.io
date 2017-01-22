@@ -5,7 +5,7 @@
                   menuWidth: 200,
                   edge: 'left',
                   closeOnClick: true,
-                  draggable: false
+                  draggable: true
               });
 
 
@@ -20,11 +20,11 @@
 
 // preloader
 document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(500).fadeOut('slow');
+	$('.preloader-background').delay(400).fadeOut('slow');
 
 	$('.preloader-wrapper')
-		.delay(500)
-		.fadeIn();
+		.delay(400)
+		.fadeOut();
 });
 
 
