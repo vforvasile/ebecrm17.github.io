@@ -93,9 +93,13 @@ $(document).ready(function()
 
 // slider mtz
 $(document).ready(function(){
-  $('.slider').slider({full_width: true,
-  height:550});
-  // $('.slider').slider({height:140});
+  $('.slider').slider({
+    full_width: true,
+    height:530,
+    draggable: false,
+    Transition: 1000,
+});
+
 });
 
 
