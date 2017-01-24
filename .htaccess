@@ -1,4 +1,4 @@
-#cache pentru fisiere
+#cache for files
 <FilesMatch ".(mp4|html|png|css|jpg|ico|)$">  
 Header set Cache-Control "max-age=2592000"  
 </FilesMatch>  
