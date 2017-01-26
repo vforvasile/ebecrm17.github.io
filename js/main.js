@@ -20,10 +20,10 @@
 
 // preloader
 document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(300).fadeOut('slow');
+	$('.preloader-background').delay(500).fadeOut('slow');
 
 	$('.preloader-wrapper')
-		.delay(300)
+		.delay(500)
 		.fadeOut();
 });
 
@@ -96,8 +96,7 @@ $(document).ready(function(){
   $('.slider').slider({
     full_width: true,
     height:450,
-    transition: 500,
-    indicators: false,
+    indicators: false
 });
 
 });

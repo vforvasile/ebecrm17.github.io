@@ -1224,9 +1224,9 @@ figure.snip1139 .author h5 span {
 }
 
 
-.snip1139:hover {
+/*.snip1139:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+}*/
 
 /*gallery stuff below============
 ========================================== */
@@ -1516,20 +1516,6 @@ Footer
 }
 
 
-.preloader-background {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #eee;
-
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
 
 .contest-container {
   /*width: 380px;*/
@@ -1787,4 +1773,17 @@ nav ul a {
   top: 0;
   margin-bottom: 0px;
   z-index: 997;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
