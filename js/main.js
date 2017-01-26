@@ -20,10 +20,10 @@
 
 // preloader
 document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(500).fadeOut('slow');
+	$('.preloader-background').delay(300).fadeOut('slow');
 
 	$('.preloader-wrapper')
-		.delay(500)
+		.delay(300)
 		.fadeOut();
 });
 
