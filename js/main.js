@@ -5,7 +5,7 @@
                   menuWidth: 200,
                   edge: 'left',
                   closeOnClick: true,
-                  draggable: true
+                  draggable: false,
               });
 
 
@@ -20,10 +20,10 @@
 
 // preloader
 document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(400).fadeOut('slow');
+	$('.preloader-background').delay(300).fadeOut('slow');
 
 	$('.preloader-wrapper')
-		.delay(400)
+		.delay(300)
 		.fadeOut();
 });
 
@@ -95,9 +95,9 @@ $(document).ready(function()
 $(document).ready(function(){
   $('.slider').slider({
     full_width: true,
-    height:530,
-    draggable: false,
-    Transition: 1000,
+    height:450,
+    transition: 500,
+    indicators: false,
 });
 
 });

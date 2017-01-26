@@ -52,34 +52,40 @@
   <!-- <link rel="stylesheet" href="css/mobi.css"> -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
 
-
-</head>
-
-<div class="preloader-background">
-  <div class="preloader-wrapper big active">
-    <div class="spinner-layer spinner-green-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div>
-      <div class="gap-patch">
-        <div class="circle"></div>
-      </div>
-      <div class="circle-clipper right">
-        <div class="circle"></div>
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-green-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</head>
+
+
+
+
+
 
 <body id="top" class="scrollspy">
+  <div class="">
   <video autoplay loop muted poster="img/White-Board.jpg" id="bgvid" class="hide-on-med-and-down">
       <!-- <source src="media/demo.webm" type="video/webm"> -->
       <source src="media/demo.mp4" type="video/mp4">
       <!-- <source src="media/demo.ogv" type="video/ogv"> -->
+
   </video>
   <button class="btn-floating btn-large waves-effect waves-light hide-on-med-and-down wow  white " data-wow-delay="500ms"  id="vidpause">II</button>
-<!-- video edn -->
-<!-- data-wow-duration="1s" bounceInRight -->
+  </div>
+
+
 
   <div id="app">
 
@@ -111,6 +117,7 @@
           </div>
         </div>
       </nav>
+
     </div>
 
             <ul id="nav-mobile" class="side-nav">
@@ -128,8 +135,8 @@
 </header>
 
 
-
-
+<!-- video edn -->
+<!-- data-wow-duration="1s" bounceInRight -->
 
 
   <!-- <div class="Playful type hide-on-med-and-down center-align"> -->
@@ -141,7 +148,7 @@
 
 
   <!-- <div class="mbr-arrow mbr-arrow-floating wow fadeIn hide-on-med-and-down "data-wow-delay="200ms" aria-hidden="true"><a href="#"><i class="mbr-arrow-icon"></i></a></div> -->
-  <div class="mbr-arrow mbr-arrow-floating wow fadeIn  wow zoomInDown hide-on-med-and-down" data-wow-delay="500ms"   aria-hidden="true"><a href="#contest">Contest<i class="mbr-arrow-icon"></i></a></div>
+  <div class="mbr-arrow mbr-arrow-floating wow fadeIn  wow zoomInDown hide-on-med-and-down" data-wow-delay="500ms"   aria-hidden="true"><a href="#intro">More<i class="mbr-arrow-icon"></i></a></div>
 <!-- data-wow-delay="1500ms" data-wow-duration="3s" -->
 
 <div class="scrollspy hide-on-large-only" id="intro2">
@@ -152,14 +159,14 @@
           <img src="img/ebec/brasov_5.jpg"> <!-- random image -->
           <div class="caption center-align">
             <h3>EBEC Brașov</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <h5 class="light grey-text text-lighten-3">Devino inginerul Europei!</h5>
           </div>
         </li>
         <li>
           <img src="img/ebec/bucuresti_2.jpg"> <!-- random image -->
           <div class="caption center-align">
             <h3>EBEC București</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <h5 class="light grey-text text-lighten-3">Be the team that rules them all!</h5>
           </div>
         </li>
         <li>
@@ -173,14 +180,14 @@
           <img src="img/ebec/cluj_1.jpg"> <!-- random image -->
           <div class="caption center-align">
             <h3>EBEC Cluj-Napoca</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <h5 class="light grey-text text-lighten-3">Concurează cu Europa și demonstrează că ești cel mai bun!</h5>
           </div>
         </li>
         <li>
           <img src="img/ebec/iasi_1.jpg"> <!-- random image -->
           <div class="caption left-align">
             <h3>EBEC Iași</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <h5 class="light grey-text text-lighten-3">Design your future!</h5>
           </div>
         </li>
       </ul>
@@ -191,15 +198,13 @@
 
 
 
-    <div class="section scrollspy center-align contest-section" id="contest">
+    <!-- <div class="section scrollspy center-align contest-section" id="contest">
         <div class="at-section">
           <div class="at-section__title wow fadeIn" data-wow-delay="100ms"> {{ pg.ctest.title }} </div>
         </div>
           <div class="contest-container center-align wow fadeIn" data-wow-delay="250ms">
 
           <a class="e-widget no-button center-align wow fadeIn contest-box" data-wow-delay="250ms" href="https://gleam.io/5s8eI/ebec-january-contest" rel="nofollow">EBEC January Contest</a>
-
-
         <div class="rules row">
           <h5>{{ pg.ctest.rules }}</h5>
           <ul class="left-align col l4 m8 s12 offset-l4">
@@ -219,10 +224,9 @@
             	{{ pg.ctest.msg}}
             </p>
           </ul>
-
         </div>
         </div>
-</div>
+</div> -->
 
 
 
@@ -250,9 +254,9 @@
             </div>
 
           <div id="test4">
-            <div class="row">
+            <div class="row ">
             <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium " id="uni-card" >
+                      <div class="card medium hoverable" id="uni-card" >
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/4.jpg" >
                           </div>
@@ -276,7 +280,7 @@
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium" id="uni-card">
+                      <div class="card medium hoverable" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/1.jpg">
                           </div>
@@ -300,7 +304,7 @@
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium" id="uni-card">
+                      <div class="card medium hoverable" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture" >
                               <img class="activator" src="img/2.jpg">
                           </div>
@@ -324,7 +328,7 @@
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium" id="uni-card">
+                      <div class="card medium hoverable" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/3.jpg">
                           </div>
@@ -348,7 +352,7 @@
                       </div>
                   </div>
                   <div class="col s12 m6 l4 uni-col">
-                      <div class="card medium" id="uni-card">
+                      <div class="card medium hoverable" id="uni-card">
                           <div class="card-image waves-effect waves-block waves-light uni-picture">
                               <img class="activator" src="img/5.jpg">
                           </div>
@@ -490,32 +494,32 @@
           <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Brasov </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/brasov_1.jpg" data-gallery>
-              <img src="img/ebec/thumb/brasov_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/brasov_1_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
             <a href="img/ebec/brasov_2.jpg" data-gallery>
-              <img src="img/ebec/thumb/brasov_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/brasov_2_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
             <a href="img/ebec/brasov_3.jpg" data-gallery>
-              <img src="img/ebec/thumb/brasov_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/brasov_3_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
             <a href="img/ebec/brasov_4.jpg" data-gallery>
-              <img src="img/ebec/thumb/brasov_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/brasov_4_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
             <a href="img/ebec/brasov_5.jpg" data-gallery>
-              <img src="img/ebec/thumb/brasov_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/brasov_5_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
           <!-- end of first row / add button below -->
@@ -530,32 +534,32 @@
           <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Bucharest </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/bucuresti_1.jpg" data-gallery>
-              <img src="img/ebec/thumb/bucuresti_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/bucuresti_1_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
             <a href="img/ebec/bucuresti_2.jpg" data-gallery>
-              <img src="img/ebec/thumb/bucuresti_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/bucuresti_2_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
             <a href="img/ebec/bucuresti_3.jpg" data-gallery>
-              <img src="img/ebec/thumb/bucuresti_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/bucuresti_3_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
             <a href="img/ebec/bucuresti_4.jpg" data-gallery>
-              <img src="img/ebec/thumb/bucuresti_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/bucuresti_4_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
             <a href="img/ebec/bucuresti_5.jpg" data-gallery>
-              <img src="img/ebec/thumb/bucuresti_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/bucuresti_5_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
@@ -574,32 +578,32 @@
           <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Chisinau </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/chisinau_1.jpg" data-gallery>
-              <img src="img/ebec/thumb/chisinau_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/chisinau_1_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
             <a href="img/ebec/chisinau_2.jpg" data-gallery>
-              <img src="img/ebec/thumb/chisinau_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/chisinau_2_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
             <a href="img/ebec/chisinau_3.jpg" data-gallery>
-              <img src="img/ebec/thumb/chisinau_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/chisinau_3_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
             <a href="img/ebec/chisinau_4.jpg" data-gallery>
-              <img src="img/ebec/thumb/chisinau_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/chisinau_4_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
             <a href="img/ebec/chisinau_5.jpg" data-gallery>
-              <img src="img/ebec/thumb/chisinau_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/chisinau_5_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
@@ -616,32 +620,32 @@
           <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Cluj-Napoca </h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/cluj_1.jpg" data-gallery>
-              <img src="img/ebec/thumb/cluj_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/cluj_1_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
             <a href="img/ebec/cluj_2.jpg" data-gallery>
-              <img src="img/ebec/thumb/cluj_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/cluj_2_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
             <a href="img/ebec/cluj_3.jpg" data-gallery>
-              <img src="img/ebec/thumb/cluj_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/cluj_3_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
             <a href="img/ebec/cluj_4.jpg" data-gallery>
-              <img src="img/ebec/thumb/cluj_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/cluj_4_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
             <a href="img/ebec/cluj_5.jpg" data-gallery>
-              <img src="img/ebec/thumb/cluj_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/cluj_5_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
@@ -658,32 +662,32 @@
           <h5 class="wow fadeIn gallery-city" data-wow-delay="200ms"> Iasi</h5>
             <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="200ms">
             <a href="img/ebec/iasi_1.jpg" data-gallery>
-              <img src="img/ebec/thumb/iasi_1_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/iasi_1_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="300ms">
             <a href="img/ebec/iasi_2.jpg" data-gallery>
-              <img src="img/ebec/thumb/iasi_2_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/iasi_2_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn" data-wow-delay="400ms">
             <a href="img/ebec/iasi_3.jpg" data-gallery>
-              <img src="img/ebec/thumb/iasi_3_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/iasi_3_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="500ms">
             <a href="img/ebec/iasi_4.jpg" data-gallery>
-              <img src="img/ebec/thumb/iasi_4_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/iasi_4_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
           <div class="col s6 m4 l2 wow fadeIn hide-on-med-and-down" data-wow-delay="600ms">
             <a href="img/ebec/iasi_5.jpg" data-gallery>
-              <img src="img/ebec/thumb/iasi_5_tn.jpg" class="img-responsive gallery-pics z-depth-1">
+              <img src="img/ebec/thumb/iasi_5_tn.jpg" class="img-responsive gallery-pics z-depth-1 hoverable">
             </a>
           </div>
 
@@ -879,8 +883,8 @@
               <ul class="at-social">
 
                 <li class="at-social__item">
-                    <a href="https://www.youtube.com/watch?v=RcNrQNOLh_4" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
-                    <a href="https://www.youtube.com/watch?v=RcNrQNOLh_4" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
+                    <a href="https://www.facebook.com/StanLucian20" target="_blank"><i class="fa fa-facebook-square fa-2x hide-on-med-and-down"></i></a>
+                    <a href="https://www.facebook.com/StanLucian20" target="_blank"><i class="fa fa-facebook-square hide-on-large-only"></i></a>
                 </li>
                 <li class="at-social__item">
                     <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x  team-linkedin hide-on-med-and-down"></i></a>
@@ -1084,7 +1088,7 @@
 
         <ul class="testimonial-list container owl-carousel owl-theme center-align" data-responsive='{"0":{"items":"1"}, "481":{"items":"2"},  "1025":{"items":"3"}}'>
           <li>
-              <figure class="snip1139 wow fadeIn" data-wow-delay="300ms">
+              <figure class="snip1139 hoverable wow fadeIn" data-wow-delay="300ms">
                 <blockquote class="testimonial-quote">
                   {{ pg.testmn.bsc }}
                   <div class="arrow"></div>
@@ -1096,19 +1100,19 @@
               </figure>
           </li>
             <li>
-              <figure class="snip1139 hover wow fadeIn" data-wow-delay="330ms">
+              <figure class="snip1139 hoverable wow fadeIn" data-wow-delay="330ms">
                 <blockquote class="testimonial-quote">
                       {{ pg.testmn.ren }}
                   <div class="arrow"></div>
                 </blockquote>
-                <img src="#" alt="sample47"/>
+                <img src="img/demo.jpg" alt="sample47"/>
                 <div class="author">
                   <h5>Bita Elena<span>- Renault Group</span></h5>
                 </div>
               </figure>
             </li>
           <li>
-              <figure class="snip1139 wow fadeIn" data-wow-delay="350ms">
+              <figure class="snip1139 hoverable wow fadeIn" data-wow-delay="350ms">
               <blockquote class="testimonial-quote">
                   {{ pg.testmn.pax1 }}
                   <div class="arrow"></div>
@@ -1122,7 +1126,7 @@
 
 
           <li>
-            <figure class="snip1139 hover  wow fadeIn" data-wow-delay="400ms">
+            <figure class="snip1139 hoverable wow fadeIn" data-wow-delay="400ms">
               <blockquote class="testimonial-quote">
                   {{ pg.testmn.pax2 }}
                 <div class="arrow"></div>
@@ -1135,7 +1139,7 @@
           </li>
 
           <li>
-            <figure class="snip1139">
+            <figure class="snip1139 hoverable">
               <blockquote class="testimonial-quote">
                   {{ pg.testmn.pax3 }}
                 <div class="arrow"></div>

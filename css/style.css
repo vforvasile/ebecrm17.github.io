@@ -963,11 +963,12 @@ nav a.button-collapse {
 }
 
 #uni-card{
-    height: 330px;
+    height: 350px;
 }
+/*
 #uni-card:hover {
     	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+}*/
 /*.uni-col {
   width: 25.33333% !important;
 }*/
@@ -1143,7 +1144,7 @@ figure.snip1139 img {
   max-width: 100%;
   vertical-align: middle;
 }
-figure.snip1139 blockquote {
+/*figure.snip1139 blockquote {
   position: relative;
   background-color: #ffffff;
   padding: 25px 50px 25px 50px;
@@ -1153,7 +1154,22 @@ figure.snip1139 blockquote {
   margin: 0;
   line-height: 1.6em;
   font-style: italic;
+}*/
+
+figure.snip1139 blockquote {
+position: relative;
+background-color: #ffffff;
+padding: 23px 50px 40px 45px;
+font-size: 0.71em;
+font-weight: 500;
+text-align: left;
+margin: 0;
+ line-height: 1.6em;
+font-style: italic;
 }
+
+
+
 figure.snip1139 blockquote:before,
 figure.snip1139 blockquote:after {
   font-family: 'FontAwesome';
@@ -1196,7 +1212,7 @@ figure.snip1139 .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 12px;
 }
 figure.snip1139 .author h5 span {
   font-weight: 400;
@@ -1230,9 +1246,9 @@ figure.snip1139 .author h5 span {
 
 .gallery-pics:hover {
   /*opacity: 0.8;*/
-  -webkit-box-shadow: 0px 0px 28px -5px rgba(18,18,18,1);
+  /*-webkit-box-shadow: 0px 0px 28px -5px rgba(18,18,18,1);
   -moz-box-shadow: 0px 0px 28px -5px rgba(18,18,18,1);
-  box-shadow: 0px 0px 28px -5px rgba(18,18,18,1);
+  box-shadow: 0px 0px 28px -5px rgba(18,18,18,1);*/
   -webkit-filter: brightness(120%);
         filter: brightness(120%);
 }
@@ -1360,7 +1376,7 @@ padding-bottom: 15px;
   padding-top: 20px;
 }
 #intro {
-  margin-top: -30px;
+  margin-top: -45px;
 }
 figure.snip1139 {
   /*min-width: 220px;*/
@@ -1430,7 +1446,9 @@ figure.snip1139 {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
   }
-
+#intro {
+  margin-top: -70px;
+}
 
 }
 .ebec-icons {
@@ -1447,7 +1465,9 @@ figure.snip1139 {
 .uni-picture {
   max-height: 78% !important;
 }
-
+/*#intro {
+  margin-top: -75px;
+}*/
 
 
 /*
