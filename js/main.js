@@ -271,3 +271,60 @@ var app = new Vue({
 // console.log(app)
 
 // VUe here
+
+
+
+
+var tbarHeight = $(".top-bar").height(),
+    wHeight = $(window).height(),
+    wWidth = $(window).width(),
+    vidHeight = wHeight - tbarHeight,
+    vidTextHeight = $(".header-text").height(),
+    vidTextMargin = vidHeight / 2 - vidTextHeight / 2,
+    headerTextMobile = $(".header-text").height(),
+    pausePlay = $(".pause-play-button").height(),
+    mobileVidHeight = headerTextMobile + pausePlay + 130,
+    windowWidth = $(window).width();
+
+$(document).ready(function() {
+    windowWidth > 768 ? ($(".main-header.services").height(vidHeight), $(".header-text").css("margin-top", vidTextMargin), $(".header-text").addClass("active")) : ($(".main-header.services").height(mobileVidHeight), $(".header-text").css("margin-top", "50px"), $(".header-text").addClass("active"))
+});
+
+
+var Studios = {
+    init: function(e) {
+        var t = this;
+        this.main_video = document.getElementById(e), windowWidth > 768, this.header = $(this.main_video).closest(".main-header")[0], $(this.main_video).on("ended", function() {
+            this.volume = 0, this.currentTime = 0, $(".main-header.services").removeClass("active"), this.play()
+        }).on("timeupdate", function() {
+            this.currentTime > 30 && $(".main-header.services").hasClass("active") && ($(".main-header.services").removeClass("active"), $("#studiosBackgroundLoop").removeClass("hidden"))
+        }), $(".play-button").on("click", function(e) {
+            e.preventDefault(), this.main_video.currentTime = 0, this.main_video.play(), $(".play-button").addClass("hidden")
+        }.bind(this))
+    },
+    resize: function() {
+        $(this.header).height($(this.main_video).height()), $(window).on("resize", function() {
+            $(this.header).height($(this.main_video).height())
+        }.bind(this))
+    }
+};
+$(window).on("resize", function() {
+        var e = $(this).width() / $(this).height();
+        e <= 1.666 ? $("#studiosBackground, #studiosBackgroundLoop").css({
+            height: "100%",
+            width: "auto"
+        }) : $("#studiosBackground, #studiosBackgroundLoop").css({
+            height: "auto",
+            width: "100%"
+        })
+    }).trigger("resize"), $(".pause-play-button").click(function(e) {
+        if (!Modernizr.touch) {
+            e.preventDefault();
+            var t = $(".main-header.services");
+            return t.hasClass("active") ? ($("#studiosBackground")[0].currentTime = 0, $("#studiosBackground")[0].volume = 0, $("#studiosBackground")[0].play(), $("#studiosBackgroundLoop").removeClass("hidden"), t.removeClass("active")) : ($("#studiosBackground")[0].currentTime = 0, $("#studiosBackground")[0].volume = .5, $("#studiosBackground")[0].play(), $("#studiosBackgroundLoop").addClass("hidden"), t.addClass("active"))
+        }
+    }), $(".pause-video").on("click", function(e) {
+        e.preventDefault();
+        var t = $(".main-header.services");
+        return $("#studiosBackground")[0].currentTime = 30, $("#studiosBackground")[0].volume = 0, $("#studiosBackgroundLoop").removeClass("hidden"), t.removeClass("active")
+    })
