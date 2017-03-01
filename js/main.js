@@ -35,27 +35,25 @@ $(document).ready(function(){
 
 
 // video
-var vid = document.getElementById("bgvid"),
-pauseButton = document.getElementById("vidpause");
-function vidFade() {
-    vid.classList.add("stopfade");
-}
-vid.addEventListener('ended', function() {
-    // only functional if "loop" is removed
-     vid.pause();
-	// to capture IE10
-	vidFade();
-});
-pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
-	if (vid.paused) {
-vid.play();
-		pauseButton.innerHTML = "II";
-	} else {
-        vid.pause();
-        pauseButton.innerHTML = "►";
-	}
-})
+// var vid = document.getElementById("bgvid"),
+// pauseButton = document.getElementById("vidpause");
+// function vidFade() {
+//     vid.classList.add("stopfade");
+// }
+// vid.addEventListener('ended', function() {
+//      vid.pause();
+// 	vidFade();
+// });
+// pauseButton.addEventListener("click", function() {
+//     vid.classList.toggle("stopfade");
+// 	if (vid.paused) {
+// vid.play();
+// 		pauseButton.innerHTML = "II";
+// 	} else {
+//         vid.pause();
+//         pauseButton.innerHTML = "►";
+// 	}
+// })
 
 // scroll to top button
 $(document).ready(function() {
@@ -243,7 +241,7 @@ var ro = {
     nr2: 'Coordonator Local',
     nr3: 'Secretar',
     nr4: 'Responsabil de Fundraising',
-    nr5: 'Responsabil de Resurse Umane',
+    nr5: 'Responsabil de HR',
     nr6: 'Responsabil de Topicuri',
     nr7: 'Responsabil de Design',
     nr8: 'Responsabil de PR',

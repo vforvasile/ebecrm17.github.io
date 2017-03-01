@@ -137,7 +137,7 @@ var ro = {
     nr2: 'Coordonator Local',
     nr3: 'Secretar',
     nr4: 'Responsabil de Fundraising',
-    nr5: 'Responsabil de Resurse Umane',
+    nr5: 'Responsabil de HR',
     nr6: 'Responsabil de Topicuri',
     nr7: 'Responsabil de Design',
     nr8: 'Responsabil de PR',
