@@ -12,7 +12,6 @@ MOBI*/
 /* Video Vackground HERO
 -----------------
 ------------------
-
 */
 
 *,
@@ -207,8 +206,8 @@ div#wistia_kxtqw6fb7c.wistia_embed {
     border: 3px solid #FFF;
     height: 60px;
     width: 60px;
-    left: 50%;
-    top: 80%;
+    right: 4%;
+    top: 10%;
     margin-left: -30px;
     position: absolute;
     bottom: 0px;
@@ -220,6 +219,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     -o-transition: all .5s
+
 }
 .main-header.services.active .pause-video:hover {
     opacity: 1
@@ -551,9 +551,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
 
 
 /*-------
-
    Small footer
-
 -------*/
 .mbr-small-footer {
   background: #323232;
@@ -569,9 +567,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
     text-decoration: none; }
 
 /*-------
-
    Footer
-
 -------*/
 .mbr-footer {
   color: #fff;
@@ -696,9 +692,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
 
 
 /*-------
-
    Arrow
-
 -------*/
 @-webkit-keyframes floating-arrow {
   from {
@@ -741,7 +735,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px); } }
 .mbr-arrow {
-  bottom: 80px;
+  bottom: 50px;
   left: 0;
   position: absolute;
   text-align: center;
@@ -767,17 +761,19 @@ div#wistia_kxtqw6fb7c.wistia_embed {
     text-decoration: none;
     transition: all .3s ease-in-out;
     width: 46px; }*/
+
   .mbr-arrow a {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     color: #fff;
     display: inline-block;
-    height: 40px;
+    height: 44px;
     outline-style: none !important;
     position: relative;
     text-decoration: none;
     transition: all .3s ease-in-out;
-    width: 100px;
+    width: 110px;
+    line-height: 25px;
   }
     .mbr-arrow a:hover {
       background: #2d2d2d; }
@@ -804,7 +800,7 @@ div#wistia_kxtqw6fb7c.wistia_embed {
   right: 90px;
   position: fixed;
   text-align: right;
-  z-index: 5000; }
+  z-index: 500000; }
   @media (max-width: 991px) {
     .mbr-arrow-up {
       bottom: 31px; } }
@@ -922,13 +918,11 @@ div#wistia_kxtqw6fb7c.wistia_embed {
 
 
 /*Butoane +
-
  footer*/
 
  /*
  Verde deschis: #69963F
  Verde inchis: #4A6629
-
  */
 
 
@@ -1325,7 +1319,6 @@ footer.page-footer {
 	margin: 0;
 	padding: 0;
   height:100%;
-
 }*/
 
 
@@ -1384,7 +1377,6 @@ footer.page-footer {
     background-color: #f5f5f5;
 }
 /*#gallery {
-
     width:1200px;
     height:400px;
     padding-top: 40px;
@@ -1696,7 +1688,7 @@ figure.snip1139 {
 }
 
 @media screen and (min-width:991px) and (max-width:1280px){
-  .right, .hide-on-med-and-down {
+  .right {
       visibility: collapse;
       display: none !important;
   }
@@ -1710,10 +1702,13 @@ figure.snip1139 {
   .brand-logo {
     margin-left: 50%;
   }
-
+  .brand-logo img {
+    width: 140px;
+    margin-top: 5px;
+  }
 
 }
-@media screen and (min-width:1280px){
+@media screen and (min-width:1281px){
     .brand-logo img {
       width: 165px;
       margin-top: 5px;
@@ -1767,7 +1762,6 @@ figure.snip1139 {
 /*
 =======================================================
 Implement other stuff here
-
 ========================================================
 */
 .testimonial-list {
@@ -1786,7 +1780,6 @@ Implement other stuff here
 
 
 /* ------------
-
 Footer
 */
 
@@ -1987,7 +1980,6 @@ text-shadow: -2px 0px 2px rgba(150, 150, 150, 0.9);
   height: 520px;
 }
 .mob-slider {
-
 }*/
 
 nav ul a {
