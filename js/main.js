@@ -118,7 +118,7 @@ var en = {
   },
 
   ctest: {
-    title: 'Contest',
+    title: 'Giveaway',
     rules: 'Rules',
     rule1: 'Enter the contest with your email or facebook/twitter account',
     rule2: 'Answer the mandatory question and get 3 entries.',
