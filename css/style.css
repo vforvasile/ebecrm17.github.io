@@ -2316,7 +2316,7 @@ nav ul a {
 .mbr-arrow-floating {
   /*animation-duration: 5s;*/
   /*animation-iteration-count: 3;*/
-  animation:  bounceIn 3s ease-in-out 3s 3;
+  animation:  bounceIn 3s ease-in-out 3s 1;
 }
 /*@keyframes nudge {
   0%, 100% {
