@@ -320,6 +320,405 @@ div#wistia_kxtqw6fb7c.wistia_embed {
 }
 
 
+/*
+   Typography
+   ---------- */
+strong,
+b {
+    font-weight: 600;
+}
+
+#schedule h1,
+#schedule h2,
+#schedule h3,
+#schedule h4,
+#schedule h5,
+#schedule h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/*#schedule h5,
+#schedule h6 {
+    font-weight: 400;
+}
+
+#schedule h1 {
+    font-size: 55px;
+}
+
+#schedule h2 {
+    font-size: 45px;
+}
+
+#schedule h3 {
+    font-size: 35px;
+}
+
+#schedule h4 {
+    font-size: 30px;
+}
+
+#schedule h5 {
+    font-size: 25px;
+}
+
+#schedule h6 {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  #schedule  h1 {
+        font-size: 35px;
+    }
+  #schedule  h2 {
+        font-size: 30px;
+    }
+  #schedule  h3 {
+        font-size: 20px;
+    }
+  #schedule  h4 {
+        font-size: 18px;
+    }
+#schedule    h5 {
+        font-size: 16px;
+    }
+#schedule    h6 {
+        font-size: 16px;
+    }
+}*/
+
+#schedule p,
+.lead {
+    line-height: 1.7;
+}
+
+
+
+/* ================================================
+   Sections
+   ================================================ */
+
+.section-title {
+    text-align: center;
+    margin: 70px 0 40px !important;
+}
+
+ .section-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-title.top-space-sm {
+    margin-top: 15px;
+}
+
+.section-title p {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* ================================================
+   Schedule
+   ================================================ */
+
+.nav-pills> li > a {
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    ;
+}
+
+.nav-pills>li+li {
+    margin-left: 0;
+}
+
+.nav-pills > li:not(:first-child):not(:last-child) a {
+    border-radius: 0;
+}
+
+.nav-pills > li:first-child > a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.nav-pills > li:last-child > a {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/*
+   Vertical Timeline
+   ----------------- */
+
+.timeline {
+    position: relative;
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.timeline::before {
+    /* this is the vertical line */
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    height: 100%;
+    width: 3px;
+}
+
+@media only screen and (min-width: 1170px) {
+    .timeline {
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
+    .timeline::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
+.timeline-block {
+    position: relative;
+    margin: 1em 0;
+}
+
+.timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-block:first-child {
+    margin-top: 0;
+}
+
+.timeline-block:last-child {
+    margin-bottom: 0;
+    background-color: #FFF;
+}
+
+@media only screen and (min-width: 1170px) {
+    .timeline-block {
+        margin: 2em 0;
+    }
+    .timeline-block:first-child {
+        margin-top: 0;
+    }
+    .timeline-block:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline-bullet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid;
+    background: #FFF;
+}
+
+@media only screen and (min-width: 1170px) {
+    .timeline-bullet {
+        width: 15px;
+        height: 15px;
+        left: 50%;
+        margin-left: -8px;
+        /* Force Hardware Acceleration in WebKit */
+
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+.timeline-content {
+    position: relative;
+    margin-left: 35px;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-content h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.timeline-content p,
+.timeline-content .date {
+    font-size: 15px;
+}
+
+.timeline-content .date {
+    display: inline-block;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #B3B3B3;
+}
+
+.no-touch .timeline-content .read-more:hover {
+    background-color: #bac4cb;
+}
+
+.timeline-content .date {
+    float: left;
+    padding: 0;
+    opacity: .7;
+    font-weight: 600;
+    color: #717171;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline-content {
+        margin-left: 60px;
+    }
+    .timeline-content h2 {
+        font-size: 18px;
+        line-height: 1.0;
+    }
+    .timeline-content p {
+        font-size: 14px;
+        line-height: 1.0;
+    }
+    .timeline-content .read-more,
+    .timeline-content .date {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .timeline-content {
+        margin-left: 0;
+        width: 47.3%;
+    }
+    .timeline .timeline-block:nth-child(odd) .timeline-content h2,
+    .timeline .timeline-block:nth-child(odd) .timeline-content p {
+        text-align: right;
+    }
+    .timeline-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: white;
+    }
+    .timeline-content .read-more {
+        float: left;
+    }
+    .timeline-content .date {
+        position: absolute;
+        width: 100%;
+        left: 112%;
+        top: 0;
+        font-size: 17px;
+    }
+    .timeline-block:nth-child(even) .timeline-content {
+        float: right;
+    }
+    .timeline-block:nth-child(even) .timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: white;
+    }
+    .timeline-block:nth-child(even) .timeline-content .read-more {
+        float: right;
+    }
+    .timeline-block:nth-child(even) .timeline-content .date {
+        left: auto;
+        right: 112%;
+        text-align: right;
+    }
+}
+
+/*Default Them Style Schedule*/
+/*Default Them Style Schedule*/
+
+
+ .timeline-content h2 {
+    color: #5c5c5c;
+}
+.nav-pills>li>a {
+    color: #C2C2C2;
+}
+.form-control:focus {
+    border-color: #C2C2C2;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #818181;
+}
+.slick-prev:before, .slick-next:before {
+    color: #C2C2C2;
+}
+/* green
+ * ----- */
+
+/*color*/
+/*a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-plan .plan-name, a.popup-video:hover i {
+    color: #69963F;
+}*/
+.benefit-item .benefit-icon i {
+    color: #69963F;
+}
+/*background*/
+.timeline::before {
+    background: #69963F;
+}
+/*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: #FFF;
+    background-color: #69963F;
+}*/
+/*border*/
+.post-wrap .sticky,
+.timeline-bullet, .highlighted-plan {
+    border-color: #69963F;
+}
+
+.nav-pills {
+  overflow:hidden;
+}
+.sch-link {
+  overflow: hidden;
+}
+
+#sch-tabs .tab a {
+  background-color: #eaeaea;
+  color: #666;
+}
+#sch-tabs .tab a:hover,
+#sch-tabs .tab a.active {
+    background-color: #69963F;
+    color: #fff;
+}
+  #sch-tabs .indicator {
+      background-color: transparent;
+
+  }
+
+.schedule-icons {
+  padding-right: 5px;
+}
+
+/*
+************
+End of Schedule
+
+*************
+*/
 
 
 
@@ -1859,9 +2258,9 @@ padding-bottom: 15px;
 .mob-switch {
   padding-top: 20px;
 }
-#intro {
+/*#intro {
   margin-top: -45px;
-}
+}*/
 figure.snip1139 {
   /*min-width: 220px;*/
   max-width: 80%;
@@ -1933,9 +2332,9 @@ figure.snip1139 {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
   }
-#intro {
+/*#intro {
   margin-top: -70px;
-}
+}*/
 
 }
 .ebec-icons {
@@ -2182,7 +2581,7 @@ text-shadow: -2px 0px 2px rgba(150, 150, 150, 0.9);
 
 nav ul a {
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: #7F7F7F;
     letter-spacing: 2px;
     display: block;
@@ -2191,7 +2590,7 @@ nav ul a {
     display: inline-block;
     height: 77px;
     line-height: 80px;
-    letter-spacing: -.25px;
+    letter-spacing: -.20px;
     margin: 0;
     opacity: .75;
     text-decoration: none;
