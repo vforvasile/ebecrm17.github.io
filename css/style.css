@@ -2742,3 +2742,8 @@ nav ul a {
 .sg-icon {
   padding-right: 15px;
 }
+
+/*click test*/
+#intro2 {
+    pointer-events:none;
+}
