@@ -86,15 +86,17 @@ $(document).ready(function()
 	{
 		var data = carousel.data();
 		$(".owl-carousel").owlCarousel(data);
+
 	}
 });
 
 // slider mtz
 $(document).ready(function(){
   $('.slider').slider({
-    full_width: true,
-    height:450,
+    // full_width: true,
+    height:350,
     indicators: false
+
 });
 
 });
@@ -114,7 +116,8 @@ var en = {
     test: 'Testimonials',
     tm: 'Team',
     ptn: 'Partners',
-    ct: 'Contact'
+    ct: 'Contact',
+    sch: 'Schedule'
   },
 
   ctest: {
@@ -126,7 +129,18 @@ var en = {
     rule4: 'Multiple accounts will disqualify you!',
     msg: 'The Winner will be picked-up randomly by the system. Good luck!'
   },
-
+  showt: {
+    p11: 'This year, at the official opening of EBEC Romania and Republic of Moldova we are excited to announce Show & Tell.',
+    p22: 'This part of the opening is dedicated for the students of Technical University of Moldova that made intriguing projects and want to share the wisdom to the public.',
+    p33: 'On 7th of April we will have 7 projects from different areas of study like Mechanics, MicroElectronics, IT, Architecture etc.',
+    pr1: 'Architectural Concept',
+    pr2: 'Nao Robot - object recognition',
+    pr3: 'Planable - Social Media Tool',
+    pr4: 'Autonomous car prototype',
+    pr5: 'Contrapposto - chair concept',
+    pr6: 'Thermal Camera',
+    pr7: 'IOT - Wireless Board'
+  },
   intro: {
     header: 'About',
     tab4: 'Universities',
@@ -188,7 +202,8 @@ var ro = {
     test: 'Testimoniale',
     tm: 'Echipa',
     ptn: 'Parteneri',
-    ct: 'Contact'
+    ct: 'Contact',
+    sch: 'Orar'
   },
 
   ctest: {
@@ -200,7 +215,18 @@ var ro = {
     rule4: 'Crearea mai multor conturi va duce la descalificare',
     msg: 'Câștigătorii vor fi selectați aleatoriu de către sistem. Succes!'
   },
-
+  showt: {
+    p11: 'În cadrul deschiderii oficiale a evenimentului EBEC România şi Republica Moldova va avea loc Show and Tell.',
+    p22: 'Această secţiune este adresată studenţilor de la Universitatea Tehnică din Moldova, care doresc să îşi testeze cunoştinţele acumulate prin realizarea unui proiect.',
+    p33: 'Anul acesta vor fi prezentate 7 proiecte din diferite domenii, precum: Mecanică, Electronică, IT, Arhitectură etc.',
+    pr1: 'Concept Arhitectural',
+    pr2: 'Nao Robot - recunoașterea obiectelor',
+    pr3: 'Planable - Instrument Social Media',
+    pr4: 'Mașină electrică autonomă',
+    pr5: 'Contrapposto - concept de scaun',
+    pr6: 'Cameră Termală',
+    pr7: 'IOT - Placă Wireless'
+  },
   intro: {
     header: 'Despre',
     tab4: 'Universități',
